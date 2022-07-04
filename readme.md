@@ -10,4 +10,4 @@ Risk management is key. STAY SAFE EVERYONE!
 
 Much love,
 
-Tyler Simpson}
+Tyler Simpson
