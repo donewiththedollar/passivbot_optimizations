@@ -7,7 +7,3 @@ Also, more importantly you should never really have to change your wallet exposu
 So while I strongly believe my theory makes sense to not use auto unstucking, I would caution against treating wallet exposure as some number you can change every day. There is very little probability that can be safe.
 
 Risk management is key. STAY SAFE EVERYONE! 
-
-Much love,
-
-Tyler Simpson
