@@ -1,0 +1,125 @@
+not using numba
+n results 8031 score formula: adgrealizedPADstd, PAD max: 0.02
+results long best config no 7463
+symbol               adg      PADmean  PADstd   score
+XMRUSDT              0.000406 0.039482 0.024517 0.039590
+XLMUSDT              0.000578 0.017141 0.020354 0.039590
+EOSUSDT              0.000654 0.016731 0.019301 0.039590
+DOTUSDT              0.000672 0.022181 0.023079 0.039590
+LINKUSDT             0.000686 0.020785 0.022936 0.039590
+DOGEUSDT             0.000717 0.027683 0.028955 0.039590
+ENJUSDT              0.000768 0.020469 0.021457 0.039590
+MANAUSDT             0.000772 0.020338 0.022855 0.039590
+SOLUSDT              0.000777 0.021510 0.024681 0.039590
+HNTUSDT              0.000789 0.021710 0.024251 0.039590
+NEARUSDT             0.000807 0.019423 0.023893 0.039590
+1INCHUSDT            0.000829 0.032245 0.027101 0.039590
+HBARUSDT             0.000830 0.020108 0.022907 0.039590
+SKLUSDT              0.000932 0.022277 0.024575 0.039590
+VETUSDT              0.000937 0.021284 0.022714 0.039590
+SANDUSDT             0.000944 0.019563 0.023051 0.039590
+GRTUSDT              0.000947 0.019828 0.022800 0.039590
+SUSHIUSDT            0.000998 0.021635 0.024790 0.039590
+MATICUSDT            0.001002 0.024522 0.024988 0.039590
+CHZUSDT              0.001014 0.017455 0.021186 0.039590
+CHRUSDT              0.001015 0.023920 0.024803 0.039590
+DENTUSDT             0.001025 0.022824 0.022162 0.039590
+IOTAUSDT             0.001037 0.019814 0.021857 0.039590
+ONEUSDT              0.001045 0.022912 0.025955 0.039590
+CELRUSDT             0.001084 0.019838 0.023352 0.039590
+GMTUSDT              0.001381 0.017527 0.023516 0.039590
+SXPUSDT              0.001448 0.022692 0.024582 0.039590
+means                0.000892 0.022070 0.023579 
+results short best config no 7927
+symbol               adg      PADmean  PADstd   score
+HBARUSDT             0.000279 0.028905 0.034767 0.009422
+XMRUSDT              0.000283 0.030187 0.042477 0.009422
+EOSUSDT              0.000295 0.029088 0.037079 0.009422
+IOTAUSDT             0.000295 0.033679 0.044930 0.009422
+MANAUSDT             0.000305 0.166974 0.126498 0.009422
+GRTUSDT              0.000330 0.058261 0.046238 0.009422
+XLMUSDT              0.000367 0.029670 0.038416 0.009422
+1INCHUSDT            0.000427 0.030036 0.038587 0.009422
+ONEUSDT              0.000447 0.032000 0.040023 0.009422
+VETUSDT              0.000451 0.082074 0.069230 0.009422
+SXPUSDT              0.000476 0.031295 0.040307 0.009422
+LINKUSDT             0.000478 0.030014 0.040532 0.009422
+DOTUSDT              0.000492 0.030830 0.041754 0.009422
+DENTUSDT             0.000532 0.030546 0.032715 0.009422
+SOLUSDT              0.000539 0.300066 0.318208 0.009422
+SKLUSDT              0.000568 0.111218 0.075148 0.009422
+CHRUSDT              0.000574 0.028331 0.035523 0.009422
+HNTUSDT              0.000596 0.031433 0.037722 0.009422
+CELRUSDT             0.000626 0.030071 0.036453 0.009422
+SUSHIUSDT            0.000639 0.029568 0.037193 0.009422
+NEARUSDT             0.000648 0.029929 0.037869 0.009422
+ENJUSDT              0.000653 0.029820 0.041281 0.009422
+CHZUSDT              0.000754 0.028210 0.034742 0.009422
+GMTUSDT              0.000766 0.215329 0.233157 0.009422
+MATICUSDT            0.000858 0.029956 0.039068 0.009422
+DOGEUSDT             0.001014 0.027292 0.029747 0.009422
+SANDUSDT             0.001078 0.032816 0.033846 0.009422
+means                0.000547 0.058059 0.061612 
+
+sum adgs
+XMRUSDT      0.000690
+XLMUSDT      0.000944
+EOSUSDT      0.000949
+MANAUSDT     0.001078
+HBARUSDT     0.001109
+DOTUSDT      0.001164
+LINKUSDT     0.001164
+1INCHUSDT    0.001256
+GRTUSDT      0.001278
+SOLUSDT      0.001316
+IOTAUSDT     0.001332
+HNTUSDT      0.001385
+VETUSDT      0.001388
+ENJUSDT      0.001421
+NEARUSDT     0.001455
+ONEUSDT      0.001492
+SKLUSDT      0.001500
+DENTUSDT     0.001557
+CHRUSDT      0.001589
+SUSHIUSDT    0.001636
+CELRUSDT     0.001710
+DOGEUSDT     0.001731
+CHZUSDT      0.001768
+MATICUSDT    0.001860
+SXPUSDT      0.001924
+SANDUSDT     0.002022
+GMTUSDT      0.002146
+{"config_name": "neat_grid_0days",
+ "logging_level": 0,
+ "long": {"auto_unstuck_ema_dist": 0,
+          "auto_unstuck_wallet_exposure_threshold": 0,
+          "backwards_tp": true,
+          "ema_span_0": 869.6113276882537,
+          "ema_span_1": 3148.3252742313593,
+          "enabled": true,
+          "eprice_exp_base": 1,
+          "eqty_exp_base": 1.514432738939557,
+          "grid_span": 0.3926677200253757,
+          "initial_eprice_ema_dist": -0.04178323306666857,
+          "initial_qty_pct": 0.01,
+          "markup_range": 0.005664772350007096,
+          "max_n_entry_orders": 8,
+          "min_markup": 0.002,
+          "n_close_orders": 12,
+          "wallet_exposure_limit": 1},
+ "short": {"auto_unstuck_ema_dist": 0.0,
+           "auto_unstuck_wallet_exposure_threshold": 0,
+           "backwards_tp": true,
+           "ema_span_0": 4314.888838827853,
+           "ema_span_1": 5982.1007312894,
+           "enabled": true,
+           "eprice_exp_base": 1.2535205015587196,
+           "eqty_exp_base": 2.0192951416491516,
+           "grid_span": 0.5727706790419183,
+           "initial_eprice_ema_dist": -0.0195669581251927,
+           "initial_qty_pct": 0.007,
+           "markup_range": 0.03,
+           "max_n_entry_orders": 14,
+           "min_markup": 0.0051067620766098885,
+           "n_close_orders": 12,
+           "wallet_exposure_limit": 0.1}}
