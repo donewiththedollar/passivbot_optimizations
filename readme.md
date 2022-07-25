@@ -1,6 +1,8 @@
 * Updates
+  * 1.4 is long scalp, safe short
+  * 1.5 is safer long scalp, safer short
+  * Please check parameters and do your own backtests, also use proper risk management by keeping total wallet exposures per account below 3.0 on long side, and about 1.5 on short side.
   * Reorganized, did not delete any configs. Please do not use v5.7.0 configs with v5.7.1, they are not backwards compatable
-  * Reoganized again :)
 
 Risk management is key. STAY SAFE EVERYONE! 
 
