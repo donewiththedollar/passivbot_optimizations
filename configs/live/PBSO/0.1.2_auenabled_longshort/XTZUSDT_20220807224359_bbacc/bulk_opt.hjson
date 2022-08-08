@@ -1,0 +1,89 @@
+{
+"harmony_config_file" : "../configs/optimize/harmony_search.hjson"
+"backtest_config_file" : "../configs/backtest/default.hjson"
+
+coin_list : [
+ //   {coin : "TRXUSDT"},
+ //   {coin : "ALGOUSDT"},
+ //   {coin : "BNBUSDT"},
+ //   {coin : "FLOWUSDT"},
+ //   {coin : "CHZUSDT"},
+    {coin : "UNFIUSDT"},
+    {coin : "OPUSDT"},
+    {coin : "THETAUSDT"},
+    {coin : "XTZUSDT"},
+    {coin : "ATOMUSDT"},
+    {coin : "ONEUSDT"},
+    {coin : "FTMUSDT"},
+    {coin : "HBARUSDT"},
+    // other samples :
+    // {coin : "XRPUSDT,ADAUSDT,BTCUSDT"}, # Allow multi coin optimize
+    // {coin : "MATICUSDT", harmony_starting_config : "../configs/live/opti/matic/hm_010032.json"},
+    // {coin : "BTCCUSDT",  harmony_starting_config : "../configs/live/opti/btc/hm_0154644.json"},
+]
+"override_bt_and_opti" : {
+    starting_balance : 1500,
+    ohlc : true, # or false
+    # nb_days : 1000,
+    # you can set nb_days, or start_date & end_date
+    start_date : 2016-01-01,
+    end_date : 2022-08-01,
+}
+"override_harmony_config" : {
+    # allow to subdefine all parameters
+    passivbot_mode: neat_grid
+    iters : 10000,
+    n_cpus : 26,
+    do_long: true,
+    do_short: true,
+    backwards_tp_long: true,
+    backwards_tp_short: true,
+    score_formula: adg_realized_PAD_std
+    maximum_pa_distance_std_long: 0.015
+    maximum_pa_distance_std_short: 0.015
+    maximum_pa_distance_mean_long: 0.015
+    maximum_pa_distance_mean_short: 0.015
+  //  maximum_loss_profit_ratio_long: 0.25
+  //  maximum_loss_profit_ratio_short: 0.25
+
+
+    "strategies_long_and_short" : {
+        // grid_span : [0.99,0.99],
+        //min_markup : ["0.5%","0.5%"],
+        // min_markup : [0.005,0.005],
+        // markup_range : [0.0,0.01],
+    },
+    "strategies_long" : {
+        grid_span: [0.25, 0.4]
+        ema_span_0: [10, 2000]
+        ema_span_1: [10, 5000]
+        wallet_exposure_limit: [1.0, 1.0]
+        max_n_entry_orders: [7, 20]
+        initial_qty_pct: [0.01, 0.01]
+        initial_eprice_ema_dist: [-0.1, 0.0]
+        eqty_exp_base: [1.5, 3.0]
+        eprice_exp_base: [1.2, 3.0]
+        min_markup: [0.002, 0.002]
+        markup_range: [0.0, 0.003]
+        n_close_orders: [5, 20]
+        auto_unstuck_wallet_exposure_threshold: [0.0001, 0.1]
+        auto_unstuck_ema_dist: [0.0001, 0.1]
+    },
+    "strategies_short" : {
+        grid_span: [0.35, 0.5]
+        ema_span_0: [10, 4000]
+        ema_span_1: [10, 8000]
+        wallet_exposure_limit: [0.1, 0.1]
+        max_n_entry_orders: [7, 20]
+        initial_qty_pct: [0.01, 0.01]
+        initial_eprice_ema_dist: [-0.1, 0.0]
+        eqty_exp_base: [1.5, 3.0]
+        eprice_exp_base: [1.2, 3.0]
+        min_markup: [0.002, 0.002]
+        markup_range: [0.0, 0.003]
+        n_close_orders: [5, 20]
+        auto_unstuck_wallet_exposure_threshold: [0.0001, 0.1]
+        auto_unstuck_ema_dist: [0.0001, 0.1]
+    },
+}
+}
