@@ -1,14 +1,14 @@
-* Updates
-  * /PBSO/0.1_auenabled_short/ is what I am currently working on, to prevent short side from getting stuck. Previous configurations are still working well on live, 3 out of 15 got stuck on short side. These configurations can help fix this.
-  * Please check parameters and do your own backtests, also use proper risk management by keeping total wallet exposures per account below 3.0 on long side, and about 1.5 on short side.
-  * Reorganized, did not delete any configs. Please do not use v5.7.0 configs with v5.7.1, they are not backwards compatable
+# Passivbot Configurations
+## Updates
+  * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
+  * Live configs that have proven to work well so far with latest PB version, but are not 1s tick https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/live/PBSO/1m/0.1.2_auenabled_longshort
 
-Risk management is key. STAY SAFE EVERYONE! 
+Proper risk management is key. Keep your wallet exposures low!
 
-Also thanks to enarjord for this amazing project! 
+Also thanks to enarjord for this amazing project!
 
-To install, ``git clone https://github.com/enarjord/passivbot.git``
+To install Passivbot, head over to https://github.com/enarjord/passivbot/
 
-You must be using neat_grid branch to use most configurations posted here, but I will be optimizing for recursive and static for comparison.
+You must be using v5.7.1 or above to use most configurations posted here.
 
-Also if you are using my configurations, please give feedback on discord in Passivbot server or my Discord flyingtoaster#3285
+Also if you are using my configurations, please give feedback on discord in Passivbot Discord server or my Discord flyingtoaster#3285
