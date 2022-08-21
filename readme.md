@@ -1,7 +1,13 @@
 # Passivbot Configurations
 ## Updates
   * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
-  * Live configs that have proven to work well so far with latest PB version, but are not 1s tick https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1m/0.1.2_auenabled_longshort
+#### Configs of interest that are not 1s tick 
+  * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1m/0.1.2_auenabled_longshort
+  * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1m/mdcl_hardcore_scalp
+### Community Repos
+  * https://github.com/tedyptedto/pbos
+  * https://github.com/JohnKearney1/PassivBot-Configurations
+  
 
 Proper risk management is key. Keep your wallet exposures low!
 
