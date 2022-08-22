@@ -2,7 +2,7 @@
 ## Updates
   * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
 #### Current configs of interest
-##### 1m tick
+##### 1m
   * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1m/0.1.2_auenabled_longshort
   * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1m/mdcl_hardcore_scalp
 ##### 1s tick
