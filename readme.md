@@ -7,6 +7,7 @@
   * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1m/mdcl_hardcore_scalp
 ##### 1s tick
   * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1s/0.1.2_1sdata_auenabled_longshort
+  * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1s/0.1.4_40%25grid_1sdata_auenabled_longshort
 ### Community Repos
   * https://github.com/tedyptedto/pbos
   * https://github.com/JohnKearney1/PassivBot-Configurations
