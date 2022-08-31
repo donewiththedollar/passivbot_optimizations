@@ -1,5 +1,6 @@
 # Passivbot Configurations
 ## Updates
+  * 8/31/22 - 0.1.5 batch begins, looking for higher ADG with similar grid spans and will seek to optimize further after more backtesting and live testing. The reliance on autounstucking is going to be greater most likely, but higher ADG.
   * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
 #### Current configs of interest
 ##### 1m
