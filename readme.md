@@ -1,5 +1,7 @@
 # Passivbot Configurations
 ## Updates
+  * **IMPORTANT NOTE FOR PARTICLE SWARM**
+   * If you are using particle swarm configurations you must use the bitget branch by running ``git clone --branch v5.8.0_bitget https://github.com/enarjord/passivbot.git``. I recommend a clean install. 
   * 9/6/22 - Have had success with particle swarm, will proceed with more PSOs to push limitations for higher ADGs, and then go from there for longer term passive. Although, these could be used passively as they use autounstuck. Only live results tell the full story even with proper backtest, although metrics on backtest do indeed align with what we see on live result. 
   * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
 #### Current configs of interest
