@@ -1,0 +1,85 @@
+{
+  "optimizer_type": "particle_swarm_optimization",
+  "optimizer_config_file": "../configs/optimize/particle_swarm_optimization.hjson",
+  "backtest_config_file": "../configs/backtest/default.hjson",
+  "coin_list": [
+    { "coin": "MATICUSDT" },
+ //   { "coin": "DOTUSDT" },
+ //   { "coin": "DYDXUSDT" },
+ //   { "coin": "ATOMUSDT" },
+      { "coin": "GMTUSDT"},
+      { "coin": "SANDUSDT"},
+      { "coin": "SOLUSDT"},
+      { "coin": "ENJUSDT"},
+      { "coin": "EOSUSDT"},
+      { "coin": "NEARUSDT"},
+      { "coin": "AVAXUSDT"},
+      { "coin": "TRBUSDT"},
+      { "coin": "XTZUSDT"},
+      { "coin": "LINKUSDT"},
+      { "coin": "CHZUSDT"},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+      { "coin": ""},
+
+    ],
+
+  "override_bt_and_opti": {
+    "ohlc_opti": false,
+    "ohlc_bt": false,
+    "start_date": "2016-01-01",
+    "end_date": "2022-09-11",
+    "score_formula": adg_realized_PAD_std
+    "maximum_pa_distance_std_long": 0.005
+    "maximum_pa_distance_std_short": 0.005
+    "maximum_pa_distance_mean_long": 0.005
+    "maximum_pa_distance_mean_short": 0.005
+  },
+  "override_optimizer_config": {
+    "n_cpus": 52,
+    "iters": 8000,
+    "strategies_long": {
+      grid_span: [0.4, 0.5]
+      ema_span_0: [10, 2000]
+      ema_span_1: [10, 4000]
+      wallet_exposure_limit: [0.1, 0.1]
+      max_n_entry_orders: [7, 20]
+      initial_qty_pct: [0.01, 0.01]
+      initial_eprice_ema_dist: [-0.1, 0.0]
+      eqty_exp_base: [1.5, 3.0]
+      eprice_exp_base: [1.2, 3.0]
+      min_markup: [0.002, 0.002]
+      markup_range: [0.000, 0.003]
+      n_close_orders: [5, 20]
+      auto_unstuck_wallet_exposure_threshold: [0.001, 0.1]
+      auto_unstuck_ema_dist: [0.001, 0.1]
+    },
+    "strategies_short": {
+      grid_span: [0.4, 0.6]
+      ema_span_0: [10, 2000]
+      ema_span_1: [10, 8000]
+      wallet_exposure_limit: [0.1, 0.1]
+      max_n_entry_orders: [7, 20]
+      initial_qty_pct: [0.01, 0.01]
+      initial_eprice_ema_dist: [-0.1, 0.0]
+      eqty_exp_base: [1.5, 3.0]
+      eprice_exp_base: [1.2, 3.0]
+      min_markup: [0.002, 0.002]
+      markup_range: [0.000, 0.003]
+      n_close_orders: [5, 20]
+      auto_unstuck_wallet_exposure_threshold: [0.001, 0.1]
+      auto_unstuck_ema_dist: [0.001, 0.1]
+    }
+  }
+}
+
