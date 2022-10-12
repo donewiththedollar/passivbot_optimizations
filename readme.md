@@ -15,9 +15,8 @@
 ##### 1s tick
   * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1s/0.1.2_1sdata_auenabled_longshort
   * (**BEST FROM LIVE FEEDBACK**) https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/1s/0.1.4_40%25grid_1sdata_auenabled_longshort
-##### Particle swarm (**UPDATED 10/01/22**)
-  * (**NEW**)https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/PBSO/particle_swarm/PSO_0.1.4_reoptimized_new
-  * https://github.com/donewiththedollar/passivbot_v5.7.1/tree/main/configs/PBSO/particle_swarm
+##### Particle swarm (**UPDATED 10/12/22**)
+  * https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/PBSO/particle_swarm/5_recursive
   
 ### Community Repos
   * https://github.com/tedyptedto/pbos
