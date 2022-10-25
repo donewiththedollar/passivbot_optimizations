@@ -13,7 +13,7 @@
 ##### 1s tick
   * https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/harmony/1s/0.1.2_1sdata_auenabled_longshort
   * (**BEST FROM LIVE FEEDBACK**) https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/harmony/1s/0.1.4_40%25grid_1sdata_auenabled_longshort
-##### Particle swarm (**UPDATED 10/12/22**)
+##### Particle swarm (**UPDATED 10/25/22**)
   * Recursive: https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/particle_swarm/recursive
   * Neat: https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/particle_swarm/neat
   
