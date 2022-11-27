@@ -1,0 +1,92 @@
+{
+    "harmony_config_file" : "../configs/optimize/harmony_search.hjson"
+    "backtest_config_file" : "../configs/backtest/default.hjson"
+    
+    coin_list : [
+        {coin : "MATICUSDT"},
+        {coin : "DOTUSDT"},
+        {coin : "DOGEUSDT"},
+        {coin : "HBARUSDT"},
+        {coin : "MANAUSDT"},
+        {coin : "LINKUSDT"},
+        {coin : "ADAUSDT"},
+        {coin : "SANDUSDT"},
+        {coin : "SUSHIUSDT"},
+        {coin : "DYDXUSDT"},
+        {coin : "ENJUSDT"},
+        {coin : "CHZUSDT"},
+        {coin : "EOSUSDT"},
+        {coin : "ETCUSDT"},
+        {coin : "XMRUSDT"},
+        {coin : "EGLDUSDT"},
+        {coin : "XLMUSDT"},
+        {coin : "XRPUSDT"},
+        {coin : "ATOMUSDT"},
+        {coin : "TRXUSDT"},
+        {coin : "HBARUSDT"},
+        {coin : "ZECUSDT"},
+        {coin : "IOTAUSDT"},
+        {coin : "NEOUSDT"},
+        {coin : "XTZUSDT"},
+        {coin : "ALGOUSDT"},
+
+        // other samples :
+        // {coin : "XRPUSDT,ADAUSDT,BTCUSDT"}, # Allow multi coin optimize
+        // {coin : "MATICUSDT", harmony_starting_config : "../configs/live/opti/matic/hm_010032.json"},
+        // {coin : "BTCCUSDT",  harmony_starting_config : "../configs/live/opti/btc/hm_0154644.json"},
+    ]
+    "override_bt_and_opti" : {
+        starting_balance : 1500,
+        ohlc : false, # or false
+        # nb_days : 1000,
+        # you can set nb_days, or start_date & end_date
+        start_date : 2016-01-01,
+        end_date : 2022-11-23,
+    }
+"override_harmony_config" : {
+    // # allow to subdefine all parameters
+    passivbot_mode: neat_grid
+    iters : 20000,
+    n_cpus : 52,
+    do_long: true,
+    do_short: true,
+    backwards_tp_long: true,
+    backwards_tp_short: true,
+    maximum_pa_distance_std_long: 0.01,
+    maximum_pa_distance_std_short: 0.01,
+    maximum_pa_distance_mean_long: 0.01,
+    maximum_pa_distance_mean_short: 0.01,
+    "strategies_long_and_short" : {
+    },
+    "strategies_long" : {
+        ema_span_0: [240, 4320]
+        ema_span_1: [240, 10080]
+        initial_qty_pct: [0.015, 0.015]
+        initial_eprice_ema_dist: [-0.1, 0.01]
+        wallet_exposure_limit: [0.1, 0.1]
+        ddown_factor: [0.05, 4.0]
+        rentry_pprice_dist: [0.005, 0.05]
+        rentry_pprice_dist_wallet_exposure_weighting: [-10.0, 90.0]
+        min_markup: [0.001, 0.004]
+        markup_range: [0.0, 0.04]
+        n_close_orders: [4, 20]
+        auto_unstuck_wallet_exposure_threshold: [0.01, 0.1]
+        auto_unstuck_ema_dist: [0.001, 0.02]
+    },
+    "strategies_short" : {
+        ema_span_0: [240, 4320]
+        ema_span_1: [240, 10080]
+        initial_qty_pct: [0.015, 0.015]
+        initial_eprice_ema_dist: [-0.1, 0.01]
+        wallet_exposure_limit: [0.1, 0.1]
+        ddown_factor: [0.05, 4.0]
+        rentry_pprice_dist: [0.005, 0.05]
+        rentry_pprice_dist_wallet_exposure_weighting: [-10.0, 90.0]
+        min_markup: [0.001, 0.004]
+        markup_range: [0.0, 0.04]
+        n_close_orders: [4, 20]
+        auto_unstuck_wallet_exposure_threshold: [0.01, 0.1]
+        auto_unstuck_ema_dist: [0.001, 0.02]
+    },
+}
+}
