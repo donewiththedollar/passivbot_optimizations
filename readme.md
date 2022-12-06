@@ -6,7 +6,7 @@
   * **12/04/22** - Check out updated links below
   
   * **Current working directory**:
-  * https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/particle_swarm/recursive/pso_recursive_noau_longshort_0.1
+  * https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/particle_swarm/recursive/pso_recursive_noau_longshort_0.1_bwtp_off
   * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
 #### Current configs of interest
 ##### 1m
