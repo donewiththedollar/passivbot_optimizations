@@ -1,9 +1,6 @@
 # Passivbot Configurations
 ## Updates
-  * **IMPORTANT NOTE FOR PARTICLE SWARM**
-   * If you are using the particle swarm configurations you must use the latest version of passivbot ``git clone https://github.com/enarjord/passivbot.git``. I recommend a clean install. 
-   
-  * **12/04/22** - Check out updated links below
+  * **12/10/22** - Check out updated links below
   
   * **Current working directory**:
   * https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/particle_swarm/recursive/pso_recursive_noau_longshort_0.1_bwtp_off
