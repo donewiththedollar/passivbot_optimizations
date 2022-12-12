@@ -1,0 +1,59 @@
+{
+  "optimizer_type": "particle_swarm_optimization",
+  "optimizer_config_file": "../configs/optimize/particle_swarm_optimization.hjson",
+  "backtest_config_file": "../configs/backtest/default.hjson",
+  "coin_list": [
+//    { "coin": "MATICUSDT"},
+//    { "coin": "DOGEUSDT"},
+    { "coin": "SUSHIUSDT"},
+    { "coin": "DOTUSDT"},
+    { "coin": "XRPUSDT"},
+    { "coin": "XTZUSDT"},
+    { "coin": "HBARUSDT"},
+    { "coin": "EOSUSDT"},
+    { "coin": "SANDUSDT"},
+    { "coin": "DOGEUSDT"},
+    { "coin": "OPUSDT" },
+    { "coin": "CHZUSDT"},
+    { "coin": "DYDXUSDT"},
+    { "coin": "ATOMUSDT"},
+    { "coin": "LINKUSDT"},
+    { "coin": "MANAUSDT"},
+    ],
+
+  "override_bt_and_opti": {
+    "ohlc_opti": false,
+    "ohlc_bt": false,
+    "start_date": "2016-01-01",
+    "end_date": "2022-11-23"
+  },
+  "override_optimizer_config": {
+    "n_cpus": 52,
+    "iters": 10000,
+    "score_formula": adg_realized_PAD_std
+    "passivbot_mode": recursive_grid
+    "maximum_pa_distance_std_long": 0.01,
+    "maximum_pa_distance_std_short": 0.01,
+    "maximum_pa_distance_mean_long": 0.01,
+    "maximum_pa_distance_mean_short": 0.01,
+    "do_long": true,
+    "do_short": false,
+    "strategies_long": {
+      ema_span_0: [10, 1000]
+      ema_span_1: [10, 1000]
+      initial_qty_pct: [0.002, 0.007]
+      initial_eprice_ema_dist: [-0.1, -0.1]
+      wallet_exposure_limit: [2.5, 2.5]
+      ddown_factor: [1.0, 3.0]
+      rentry_pprice_dist: [0.01, 0.05]
+      rentry_pprice_dist_wallet_exposure_weighting: [0.0, 0.0]
+      min_markup: [0.002, 0.02]
+      markup_range: [0.01, 0.04]
+      n_close_orders: [2, 5]
+      auto_unstuck_wallet_exposure_threshold: [0.0, 0.0]
+      auto_unstuck_ema_dist: [0.0, 0.0]
+    },
+    "strategies_short": {
+    }
+  }
+}
