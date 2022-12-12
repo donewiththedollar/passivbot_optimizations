@@ -1,0 +1,1911 @@
+results short best config no 10024
+symbol               adg      PADmean  PADstd   lp_ratio score
+DOGEUSDT             0.000000 1.000000 100.000000 1.000000 0.000000
+means                0.000000 1.000000 100.000000 1.000000
+{'DGstd_short': 100.0,
+ 'adg_DGstd_ratio_short': 0.0,
+ 'adg_per_exposure_short': 0.0,
+ 'adg_realized_per_exposure_short': 0.0,
+ 'adg_realized_short': 0.0,
+ 'adg_short': 0.0,
+ 'avg_fills_per_day_short': 0.0,
+ 'biggest_psize_quote_short': 0.0,
+ 'biggest_psize_short': nan,
+ 'closest_bkr_short': 1.0,
+ 'eqbal_ratio_mean_short': 1.0,
+ 'eqbal_ratio_min_short': 1.0,
+ 'equity_balance_ratio_mean_short': 1.0,
+ 'equity_balance_ratio_std_short': 0.0,
+ 'exchange': 'bybit',
+ 'fee_sum_short': 0,
+ 'final_balance_short': 1500.0,
+ 'final_equity_short': 1500.0,
+ 'gain_short': 0.0,
+ 'hrs_stuck_avg': 20774.983333333334,
+ 'hrs_stuck_avg_short': 20774.983333333334,
+ 'hrs_stuck_max': 20774.983333333334,
+ 'hrs_stuck_max_short': 20774.983333333334,
+ 'loss_profit_ratio_short': 1.0,
+ 'loss_sum_short': 0,
+ 'n_closes_short': 0,
+ 'n_days': 865.6243055555556,
+ 'n_entries_short': 0,
+ 'n_fills_short': 0,
+ 'n_ientries_short': 0,
+ 'n_normal_closes_short': 0,
+ 'n_rentries_short': 0,
+ 'n_unstuck_closes_short': 0,
+ 'n_unstuck_entries_short': 0,
+ 'net_pnl_plus_fees_short': 0,
+ 'pa_distance_max_short': 100.0,
+ 'pa_distance_mean_short': 100.0,
+ 'pa_distance_std_short': 1.0,
+ 'pnl_sum_short': 0,
+ 'profit_sum_short': 0,
+ 'starting_balance': 1500.0,
+ 'symbol': 'DOGEUSDT',
+ 'volume_quote_short': 0.0}
+dump_live_config /home/krishna/flyingtoaster/passivbot/results_particle_swarm_optimization_recursive_grid/2022-12-11T23-25-16_DOGEUSDT/all_results_best_config.json
+
+sum adgs
+DOGEUSDT     0.003331
+{"config_name": "recursive_grid_0days",
+ "logging_level": 0,
+ "long": {"auto_unstuck_ema_dist": 0.0,
+          "auto_unstuck_wallet_exposure_threshold": 0.0,
+          "backwards_tp": true,
+          "ddown_factor": 2.2894053484199057,
+          "ema_span_0": 124.9176300586873,
+          "ema_span_1": 172.39110472411062,
+          "enabled": true,
+          "initial_eprice_ema_dist": -0.1,
+          "initial_qty_pct": 0.0056105212627340865,
+          "markup_range": 0.011207318384140942,
+          "min_markup": 0.003073626702364766,
+          "n_close_orders": 5,
+          "rentry_pprice_dist": 0.03914063719648532,
+          "rentry_pprice_dist_wallet_exposure_weighting": 0.0,
+          "wallet_exposure_limit": 2.5},
+ "short": {"auto_unstuck_ema_dist": 0.0022528576497172666,
+           "auto_unstuck_wallet_exposure_threshold": 0.04108783707552886,
+           "backwards_tp": true,
+           "ddown_factor": 2.734798376322401,
+           "ema_span_0": 2186.5291224814214,
+           "ema_span_1": 7195.520471277495,
+           "enabled": false,
+           "initial_eprice_ema_dist": -0.016418600718900344,
+           "initial_qty_pct": 0.015,
+           "markup_range": 0.03211181846997284,
+           "min_markup": 0.002200548405481524,
+           "n_close_orders": 11,
+           "rentry_pprice_dist": 0.016225441903537037,
+           "rentry_pprice_dist_wallet_exposure_weighting": 0,
+           "wallet_exposure_limit": 0.1}}
+python3 backtest.py -b /home/krishna/flyingtoaster/passivbot/configs/backtest/_backtest_d2299e66d566d02031dc1189ba4af3ea.hjson.renamed.hjson /home/krishna/flyingtoaster/passivbot/con
+figs/live/PBSO/pso_recursive_noau_longonly_0.3/DOGEUSDT_20221211214111_d2299//config.json
+using numba
+using numba
+using numba
+fetching market_specific_settings...
+linear perpetual
+ERROR:root:error with update position list index out of range
+Traceback (most recent call last):
+  File "/home/krishna/flyingtoaster/passivbot/passivbot.py", line 277, in update_position
+    position = await self.fetch_position()
+  File "/home/krishna/flyingtoaster/passivbot/bybit.py", line 238, in fetch_position
+    long_pos = [e for e in fetched["result"] if e["side"] == "Buy"][0]
+IndexError: list index out of range
+
+exchange                bybit
+spot                    False
+symbol                  DOGEUSDT
+market_type             futures
+starting_balance        1500
+start_date              2016-01-01
+end_date                2022-11-23
+latency_simulation_ms   1000
+base_dir                backtests
+
+2022-12-11T23:52:53  Loading cached tick data from backtests/bybit/DOGEUSDT/caches/2016-01-01_2022-11-23_ticks_cache.npy
+{'config_name': 'recursive_grid_0days',
+ 'logging_level': 0,
+ 'long': {'auto_unstuck_ema_dist': 0.0,
+          'auto_unstuck_wallet_exposure_threshold': 0.0,
+          'backwards_tp': True,
+          'ddown_factor': 2.2894053484199057,
+          'ema_span_0': 124.9176300586873,
+          'ema_span_1': 172.39110472411062,
+          'enabled': True,
+          'initial_eprice_ema_dist': -0.1,
+          'initial_qty_pct': 0.0056105212627340865,
+          'markup_range': 0.011207318384140942,
+          'min_markup': 0.003073626702364766,
+          'n_close_orders': 5,
+          'rentry_pprice_dist': 0.03914063719648532,
+          'rentry_pprice_dist_wallet_exposure_weighting': 0.0,
+          'wallet_exposure_limit': 2.5},
+ 'short': {'auto_unstuck_ema_dist': 0.0022528576497172666,
+           'auto_unstuck_wallet_exposure_threshold': 0.04108783707552886,
+           'backwards_tp': True,
+           'ddown_factor': 2.734798376322401,
+           'ema_span_0': 2186.5291224814214,
+           'ema_span_1': 7195.520471277495,
+           'enabled': False,
+           'initial_eprice_ema_dist': -0.016418600718900344,
+           'initial_qty_pct': 0.015,
+           'markup_range': 0.03211181846997284,
+           'min_markup': 0.002200548405481524,
+           'n_close_orders': 11,
+           'rentry_pprice_dist': 0.016225441903537037,
+           'rentry_pprice_dist_wallet_exposure_weighting': 0,
+           'wallet_exposure_limit': 0.1}}
+n_days 865.6
+starting_balance 1500
+backtesting...
+47.43 seconds elapsed
+dumping plots...
+writing backtest_result.txt...
+
++-------------------------------------------+
+|                  Summary                  |
++-----------------------------+-------------+
+| Metric                      | Value       |
++-----------------------------+-------------+
+| Exchange                    | binance     |
+| Market type                 | futures     |
+| Symbol                      | DOGEUSDT    |
+| No. days                    | 865.624     |
+| Starting balance            | 1500.0      |
+|                             |             |
+| Long                        | True        |
+| ADG realized per exposure   | 0.333%      |
+| Final balance               | 1965400.0   |
+| Final equity                | 1965030.0   |
+| Net PNL + fees              | 1963900.0   |
+| Total gain                  | 133300.0%   |
+| Average daily gain          | 0.893%      |
+| Loss to profit ratio        | 0.0         |
+| Price action distance mean  | 0.0120003   |
+| Price action distance std   | 0.0108275   |
+| Price action distance max   | 0.374654    |
+| Closest bankruptcy          | 14.21%      |
+| Lowest equity/balance ratio | 0.318       |
+| Equity/balance ratio std    | 0.01652     |
+| No. fills                   | 342133      |
+| No. entries                 | 336376      |
+| No. closes                  | 5757        |
+| No. initial entries         | 5140        |
+| No. reentries               | 331236      |
+| No. unstuck entries         | 0           |
+| No. unstuck closes          | 0           |
+| No. normal closes           | 5757        |
+| Average n fills per day     | 395.0       |
+| Mean hours stuck            | 2.45887     |
+| Max hours stuck             | 251.283     |
+| PNL sum                     | 1999000.0   |
+| Profit sum                  | 1999000.0   |
+| Loss sum                    | 0.0         |
+| Fee sum                     | -35500.0    |
+| Biggest pos size            | 65593919.0  |
+| Biggest pos cost            | 4806000.0   |
+| Volume quote                | 355008000.0 |
++-----------------------------+-------------+
+
+plotting balance and equity long...
+long 0 of 62 0.00% to 1.61%
+long 1 of 62 1.61% to 3.23%
+long 2 of 62 3.23% to 4.84%
+long 3 of 62 4.84% to 6.45%
+long 4 of 62 6.45% to 8.06%
+long 5 of 62 8.06% to 9.68%
+long 6 of 62 9.68% to 11.29%
+long 7 of 62 11.29% to 12.90%
+long 8 of 62 12.90% to 14.52%
+long 9 of 62 14.52% to 16.13%
+long 10 of 62 16.13% to 17.74%
+long 11 of 62 17.74% to 19.35%
+long 12 of 62 19.35% to 20.97%
+long 13 of 62 20.97% to 22.58%
+long 14 of 62 22.58% to 24.19%
+long 15 of 62 24.19% to 25.81%
+long 16 of 62 25.81% to 27.42%
+long 17 of 62 27.42% to 29.03%
+long 18 of 62 29.03% to 30.65%
+long 19 of 62 30.65% to 32.26%
+long 20 of 62 32.26% to 33.87%
+long 21 of 62 33.87% to 35.48%
+long 22 of 62 35.48% to 37.10%
+long 23 of 62 37.10% to 38.71%
+long 24 of 62 38.71% to 40.32%
+long 25 of 62 40.32% to 41.94%
+long 26 of 62 41.94% to 43.55%
+long 27 of 62 43.55% to 45.16%
+long 28 of 62 45.16% to 46.77%
+long 29 of 62 46.77% to 48.39%
+long 30 of 62 48.39% to 50.00%
+long 31 of 62 50.00% to 51.61%
+long 32 of 62 51.61% to 53.23%
+long 33 of 62 53.23% to 54.84%
+long 34 of 62 54.84% to 56.45%
+long 35 of 62 56.45% to 58.06%
+long 36 of 62 58.06% to 59.68%
+long 37 of 62 59.68% to 61.29%
+long 38 of 62 61.29% to 62.90%
+long 39 of 62 62.90% to 64.52%
+long 40 of 62 64.52% to 66.13%
+long 41 of 62 66.13% to 67.74%
+long 42 of 62 67.74% to 69.35%
+long 43 of 62 69.35% to 70.97%
+long 44 of 62 70.97% to 72.58%
+long 45 of 62 72.58% to 74.19%
+long 46 of 62 74.19% to 75.81%
+long 47 of 62 75.81% to 77.42%
+long 48 of 62 77.42% to 79.03%
+long 49 of 62 79.03% to 80.65%
+long 50 of 62 80.65% to 82.26%
+long 51 of 62 82.26% to 83.87%
+long 52 of 62 83.87% to 85.48%
+long 53 of 62 85.48% to 87.10%
+long 54 of 62 87.10% to 88.71%
+long 55 of 62 88.71% to 90.32%
+long 56 of 62 90.32% to 91.94%
+long 57 of 62 91.94% to 93.55%
+long 58 of 62 93.55% to 95.16%
+long 59 of 62 95.16% to 96.77%
+long 60 of 62 96.77% to 98.39%
+long 61 of 62 98.39% to 100.00%
+plotting long initial entry band
+plotting pos sizes...
+Start Optimize loop SUSHIUSDT
+python3 particle_swarm_optimization.py -o /home/krishna/flyingtoaster/passivbot/configs/optimize/_optimizer_d2299e66d566d02031dc1189ba4af3ea.hjson.renamed.hjson -b /home/krishna/flyi
+ngtoaster/passivbot/configs/backtest/_backtest_d2299e66d566d02031dc1189ba4af3ea.hjson
+using numba
+using numba
+using numba
+fetching market_specific_settings...
+linear perpetual
+error with update position list index out of range
+Traceback (most recent call last):
+  File "/home/krishna/flyingtoaster/passivbot/passivbot.py", line 277, in update_position
+    position = await self.fetch_position()
+  File "/home/krishna/flyingtoaster/passivbot/bybit.py", line 238, in fetch_position
+    long_pos = [e for e in fetched["result"] if e["side"] == "Buy"][0]
+IndexError: list index out of range
+
+optimize_config_path              /home/krishna/flyingtoaster/passivbot/configs/optimize/_optimizer_d2299e66d566d02031dc1189ba4af3ea.hjson.renamed.hjson
+ohlcv                             False
+nojit                             False
+backtest_config_path              /home/krishna/flyingtoaster/passivbot/configs/backtest/_backtest_d2299e66d566d02031dc1189ba4af3ea.hjson
+start_date                        2016-01-01
+end_date                          2022-11-23
+w                                 0.73
+c0                                1
+c1                                0.5
+maximum_pa_distance_std_long      0.01
+maximum_pa_distance_std_short     0.01
+maximum_pa_distance_mean_long     0.01
+maximum_pa_distance_mean_short    0.01
+maximum_loss_profit_ratio_long    0.1
+maximum_loss_profit_ratio_short   0.1
+
+starting new initial eval 1 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.25 em_0161.0 em_1557.0 ened1.0 inst-0.1 inct0.00693 mage0.0102 miup0.0189 n_rs4.39 rest0.027 reng0.0 wait2.5
+starting new initial eval 2 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.43 em_0449.0 em_1782.0 ened1.0 inst-0.1 inct0.00264 mage0.0181 miup0.0123 n_rs2.78 rest0.0207 reng0.0 wait2.5
+starting new initial eval 3 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.52 em_0347.0 em_1515.0 ened1.0 inst-0.1 inct0.00207 mage0.0396 miup0.00872 n_rs2.07 rest0.0338 reng0.0 wait2.
+5
+starting new initial eval 4 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.3 em_0229.0 em_1551.0 ened1.0 inst-0.1 inct0.00661 mage0.0332 miup0.0174 n_rs4.25 rest0.0253 reng0.0 wait2.5
+starting new initial eval 5 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.41 em_0176.0 em_1787.0 ened1.0 inst-0.1 inct0.00413 mage0.0249 miup0.0125 n_rs2.92 rest0.0161 reng0.0 wait2.5
+starting new initial eval 6 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.19 em_0830.0 em_1710.0 ened1.0 inst-0.1 inct0.00366 mage0.0394 miup0.00654 n_rs2.85 rest0.0194 reng0.0 wait2.
+5
+starting new initial eval 7 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.9 em_0944.0 em_1883.0 ened1.0 inst-0.1 inct0.00675 mage0.0265 miup0.0157 n_rs2.7 rest0.0103 reng0.0 wait2.5
+starting new initial eval 8 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.03 em_0899.0 em_1939.0 ened1.0 inst-0.1 inct0.00285 mage0.0318 miup0.00829 n_rs4.98 rest0.0393 reng0.0 wait2.
+5
+starting new initial eval 9 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.71 em_0263.0 em_1993.0 ened1.0 inst-0.1 inct0.0068 mage0.0104 miup0.0168 n_rs2.75 rest0.0472 reng0.0 wait2.5
+starting new initial eval 10 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.43 em_0679.0 em_1238.0 ened1.0 inst-0.1 inct0.00335 mage0.0373 miup0.019 n_rs3.35 rest0.0247 reng0.0 wait2.5
+starting new initial eval 11 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.73 em_0983.0 em_1387.0 ened1.0 inst-0.1 inct0.00697 mage0.0291 miup0.00274 n_rs4.97 rest0.049 reng0.0 wait2.
+5
+starting new initial eval 12 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.47 em_0325.0 em_1179.0 ened1.0 inst-0.1 inct0.00616 mage0.0269 miup0.0191 n_rs3.91 rest0.0345 reng0.0 wait2.
+5
+starting new initial eval 13 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.19 em_0659.0 em_1893.0 ened1.0 inst-0.1 inct0.00387 mage0.0343 miup0.0155 n_rs2.87 rest0.0169 reng0.0 wait2.
+5
+starting new initial eval 14 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.74 em_0172.0 em_1577.0 ened1.0 inst-0.1 inct0.00533 mage0.0318 miup0.013 n_rs3.72 rest0.0149 reng0.0 wait2.5
+starting new initial eval 15 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.49 em_0658.0 em_1940.0 ened1.0 inst-0.1 inct0.00566 mage0.0188 miup0.00375 n_rs2.86 rest0.0292 reng0.0 wait2
+.5
+starting new initial eval 16 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.96 em_0971.0 em_1625.0 ened1.0 inst-0.1 inct0.00342 mage0.023 miup0.00235 n_rs3.67 rest0.0277 reng0.0 wait2.
+5
+starting new initial eval 17 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.04 em_025.3 em_1602.0 ened1.0 inst-0.1 inct0.00502 mage0.0221 miup0.0031 n_rs2.87 rest0.0454 reng0.0 wait2.5
+starting new initial eval 18 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.81 em_0445.0 em_1376.0 ened1.0 inst-0.1 inct0.00539 mage0.016 miup0.00492 n_rs4.74 rest0.0232 reng0.0 wait2.
+5
+starting new initial eval 19 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.75 em_0512.0 em_1481.0 ened1.0 inst-0.1 inct0.00678 mage0.0114 miup0.00923 n_rs3.12 rest0.0467 reng0.0 wait2
+.5
+starting new initial eval 20 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.94 em_0487.0 em_1444.0 ened1.0 inst-0.1 inct0.00363 mage0.0308 miup0.00479 n_rs2.36 rest0.013 reng0.0 wait2.
+5
+starting new initial eval 21 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.42 em_0153.0 em_1842.0 ened1.0 inst-0.1 inct0.0065 mage0.0266 miup0.0157 n_rs2.71 rest0.0406 reng0.0 wait2.5
+starting new initial eval 22 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.22 em_0752.0 em_1268.0 ened1.0 inst-0.1 inct0.00492 mage0.0152 miup0.00421 n_rs2.67 rest0.0187 reng0.0 wait2
+.5
+starting new initial eval 23 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.42 em_0638.0 em_1491.0 ened1.0 inst-0.1 inct0.00662 mage0.0301 miup0.0156 n_rs4.85 rest0.0438 reng0.0 wait2.
+5
+starting new initial eval 24 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.1 em_0938.0 em_1765.0 ened1.0 inst-0.1 inct0.0052 mage0.0342 miup0.00577 n_rs2.34 rest0.0106 reng0.0 wait2.5
+i2 - new best config long, score -0.01856 adg_realized_per_exposure 0.004959 pa_distance_std 0.08667 pa_distance_mean 0.04719 hrs_stuck_max 13.03 loss_profit_ratio 65.34
+i2 - new best config short, score -0.0 adg_realized_per_exposure 0.0 pa_distance_std 1.0 pa_distance_mean 100.0 hrs_stuck_max 26.48 loss_profit_ratio 1.0
+i4 - new best config long, score -0.482 adg_realized_per_exposure 0.02197 pa_distance_std 0.07734 pa_distance_mean 0.03756 hrs_stuck_max 9.183 loss_profit_ratio 15.69
+i12 - new best config long, score -1.318 adg_realized_per_exposure 0.04156 pa_distance_std 0.08831 pa_distance_mean 0.04204 hrs_stuck_max 5.417 loss_profit_ratio 8.493
+i61 - new best config long, score -2.991 adg_realized_per_exposure 0.07103 pa_distance_std 0.08824 pa_distance_mean 0.0493 hrs_stuck_max 9.317 loss_profit_ratio 5.459
+i20 - new best config long, score -6.935 adg_realized_per_exposure 0.1112 pa_distance_std 0.08889 pa_distance_mean 0.04752 hrs_stuck_max 8.117 loss_profit_ratio 3.794
+i25
+i75
+i50
+i63 - new best config long, score -9.121 adg_realized_per_exposure 0.1251 pa_distance_std 0.08766 pa_distance_mean 0.04507 hrs_stuck_max 8.183 loss_profit_ratio 3.471
+i100
+i125
+i150
+i168 - new best config long, score -16.73 adg_realized_per_exposure 0.1768 pa_distance_std 0.086 pa_distance_mean 0.04557 hrs_stuck_max 7.383 loss_profit_ratio 2.696
+i200
+i175
+i225
+i250
+i252 - new best config long, score -20.62 adg_realized_per_exposure 0.1862 pa_distance_std 0.08261 pa_distance_mean 0.04183 hrs_stuck_max 7.65 loss_profit_ratio 2.613
+i275
+i300
+i325
+i350
+i400
+i375
+i425
+i450
+i475
+i490 - new best config long, score -21.79 adg_realized_per_exposure 0.1952 pa_distance_std 0.08291 pa_distance_mean 0.04259 hrs_stuck_max 7.733 loss_profit_ratio 2.537
+i500
+i525
+i546 - new best config long, score -22.11 adg_realized_per_exposure 0.1955 pa_distance_std 0.08287 pa_distance_mean 0.04214 hrs_stuck_max 7.667 loss_profit_ratio 2.533
+i550
+i600
+i575
+i625
+i650
+i675
+i687 - new best config long, score -26.78 adg_realized_per_exposure 0.2196 pa_distance_std 0.08263 pa_distance_mean 0.04224 hrs_stuck_max 7.7 loss_profit_ratio 2.349
+i700
+i725
+i750
+i775
+i800
+i850
+i855 - new best config long, score -29.07 adg_realized_per_exposure 0.2323 pa_distance_std 0.08291 pa_distance_mean 0.04244 hrs_stuck_max 7.7 loss_profit_ratio 2.271
+i825
+i900
+i875
+i927 - new best config long, score -29.09 adg_realized_per_exposure 0.2324 pa_distance_std 0.08291 pa_distance_mean 0.04244 hrs_stuck_max 7.7 loss_profit_ratio 2.271
+i950
+i925
+i975
+i999 - new best config long, score -29.14 adg_realized_per_exposure 0.2326 pa_distance_std 0.0829 pa_distance_mean 0.04244 hrs_stuck_max 7.7 loss_profit_ratio 2.269
+i1000
+i1025
+i1050
+i1075
+i1100
+i1125
+i1150
+i1175
+i1200
+i1224 - new best config long, score -29.35 adg_realized_per_exposure 0.2336 pa_distance_std 0.0827 pa_distance_mean 0.04254 hrs_stuck_max 7.7 loss_profit_ratio 2.262
+i1225
+i1250
+i1265 - new best config long, score -31.29 adg_realized_per_exposure 0.2384 pa_distance_std 0.08204 pa_distance_mean 0.04172 hrs_stuck_max 7.7 loss_profit_ratio 2.226
+i1275
+i1300
+i1325
+i1350
+i1375
+i1400
+i1425
+i1450
+i1475
+i1481 - new best config long, score -31.34 adg_realized_per_exposure 0.2387 pa_distance_std 0.08205 pa_distance_mean 0.04172 hrs_stuck_max 7.7 loss_profit_ratio 2.225
+i1500
+i1525
+i1548 - new best config long, score -31.46 adg_realized_per_exposure 0.2387 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.223
+i1550
+i1575
+i1600
+i1625
+i1644 - new best config long, score -31.71 adg_realized_per_exposure 0.2399 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.217
+i1650
+i1675
+i1700
+i1725
+i1750
+i1775
+i1800
+i1825
+i1850
+i1860 - new best config long, score -31.71 adg_realized_per_exposure 0.2399 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.217
+i1875
+i1884 - new best config long, score -31.73 adg_realized_per_exposure 0.24 pa_distance_std 0.08189 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.216
+i1900
+i1925
+i1950
+i1975
+i2000
+i2025
+i2050
+i2075
+i2100
+i2122 - new best config long, score -31.79 adg_realized_per_exposure 0.2402 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.215
+i2125
+i2150
+i2175
+i2200
+i2225
+i2250
+i2275
+i2300
+i2314 - new best config long, score -31.79 adg_realized_per_exposure 0.2403 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.215
+i2325
+i2350
+i2364 - new best config long, score -31.79 adg_realized_per_exposure 0.2402 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.215
+i2375
+i2400
+i2425
+i2450
+i2475
+i2500
+i2525
+i2550
+i2575
+i2600
+i2625
+i2648 - new best config long, score -31.85 adg_realized_per_exposure 0.2405 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.213
+i2650
+i2672 - new best config long, score -31.91 adg_realized_per_exposure 0.2408 pa_distance_std 0.08188 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.212
+i2675
+i2700
+i2725
+i2730 - new best config long, score -32.04 adg_realized_per_exposure 0.2414 pa_distance_std 0.08187 pa_distance_mean 0.04169 hrs_stuck_max 7.7 loss_profit_ratio 2.208
+i2775
+i2750
+i2800
+i2825
+i2850
+i2874 - new best config long, score -32.05 adg_realized_per_exposure 0.2415 pa_distance_std 0.08187 pa_distance_mean 0.04169 hrs_stuck_max 7.7 loss_profit_ratio 2.208
+i2875
+i2898 - new best config long, score -32.05 adg_realized_per_exposure 0.2415 pa_distance_std 0.08187 pa_distance_mean 0.04169 hrs_stuck_max 7.7 loss_profit_ratio 2.208
+i2900
+i2925
+i2950
+i2962 - new best config long, score -32.07 adg_realized_per_exposure 0.2416 pa_distance_std 0.08187 pa_distance_mean 0.04169 hrs_stuck_max 7.7 loss_profit_ratio 2.207
+i2975
+i3000
+i3025
+i3034 - new best config long, score -32.07 adg_realized_per_exposure 0.2416 pa_distance_std 0.08187 pa_distance_mean 0.04169 hrs_stuck_max 7.7 loss_profit_ratio 2.207
+i3050
+i3075
+i3100
+i3125
+i3150
+i3175
+i3200
+i3225
+i3250
+i3275
+i3325
+i3300
+i3375
+i3350
+i3425
+i3400
+i3450
+i3475
+i3500
+i3525
+i3541 - new best config long, score -32.12 adg_realized_per_exposure 0.2417 pa_distance_std 0.08187 pa_distance_mean 0.04166 hrs_stuck_max 7.7 loss_profit_ratio 2.206
+i3550
+i3565 - new best config long, score -32.18 adg_realized_per_exposure 0.242 pa_distance_std 0.08187 pa_distance_mean 0.04166 hrs_stuck_max 7.7 loss_profit_ratio 2.205
+i3575
+i3600
+i3625
+i3650
+i3675
+i3700
+i3725
+i3733 - new best config long, score -32.18 adg_realized_per_exposure 0.242 pa_distance_std 0.08187 pa_distance_mean 0.04166 hrs_stuck_max 7.7 loss_profit_ratio 2.205
+i3750
+i3774 - new best config long, score -32.22 adg_realized_per_exposure 0.2422 pa_distance_std 0.08187 pa_distance_mean 0.04166 hrs_stuck_max 7.7 loss_profit_ratio 2.204
+i3775
+i3800
+i3825
+i3850
+i3853 - new best config long, score -32.22 adg_realized_per_exposure 0.2422 pa_distance_std 0.08187 pa_distance_mean 0.04166 hrs_stuck_max 7.7 loss_profit_ratio 2.204
+i3875
+i3846 - new best config long, score -32.22 adg_realized_per_exposure 0.2422 pa_distance_std 0.08187 pa_distance_mean 0.04166 hrs_stuck_max 7.7 loss_profit_ratio 2.204
+i3900
+i3925
+i3950
+i3975
+i4000
+i4025
+i4050
+i4075
+i4100
+i4125
+i4150
+i4164 - new best config long, score -32.22 adg_realized_per_exposure 0.2422 pa_distance_std 0.08187 pa_distance_mean 0.04166 hrs_stuck_max 7.7 loss_profit_ratio 2.204
+i4175
+i4200
+i4225
+i4250
+i4275
+i4300
+i4325
+i4350
+i4375
+i4400
+i4450
+i4425
+i4475
+i4500
+i4525
+i4550
+i4575
+i4600
+i4625
+i4650
+i4675
+i4700
+i4725
+i4750
+i4775
+i4800
+i4825
+i4850
+i4875
+i4900
+i4925
+i4950
+i4975
+i5000
+i5025
+i5050
+i5075
+i5100
+i5125
+i5150
+i5175
+i5200
+i5225
+i5250
+i5275
+i5300
+i5325
+i5350
+i5375
+i5425
+i5400
+i5450
+i5475
+i5500
+i5525
+i5550
+i5575
+i5600
+i5625
+i5650
+i5675
+i5700
+i5725
+i5750
+i5775
+i5800
+i5825
+i5850
+i5875
+i5900
+i5925
+i5950
+i5975
+i6000
+i6025
+i6050
+i6075
+i6100
+i6125
+i6150
+i6175
+i6200
+i6225
+i6250
+i6300
+i6275
+i6350
+i6325
+i6400
+i6375
+i6427 - new best config long, score -32.24 adg_realized_per_exposure 0.2424 pa_distance_std 0.08187 pa_distance_mean 0.04169 hrs_stuck_max 7.7 loss_profit_ratio 2.203
+i6450
+i6425
+i6500
+i6475
+i6550
+i6525
+i6600
+i6575
+i6650
+i6625
+i6675
+i6700
+i6725
+i6750
+i6775
+i6800
+i6825
+i6850
+i6866 - new best config long, score -32.27 adg_realized_per_exposure 0.2425 pa_distance_std 0.08187 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.202
+i6875
+i6900
+i6925
+i6950
+i6975
+i7000
+i7025
+i7050
+i7075
+i7100
+i7125
+i7150
+i7175
+i7200
+i7225
+i7250
+i7275
+i7300
+i7325
+i7350
+i7375
+i7400
+i7425
+i7433 - new best config long, score -32.34 adg_realized_per_exposure 0.2428 pa_distance_std 0.08187 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.201
+i7450
+i7475
+i7500
+i7525
+i7550
+i7575
+i7600
+i7625
+i7650
+i7673 - new best config long, score -32.34 adg_realized_per_exposure 0.2428 pa_distance_std 0.08187 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.201
+i7675
+i7700
+i7725
+i7750
+i7775
+i7800
+i7825
+i7850
+i7875
+i7900
+i7925
+i7950
+i7975
+i8000
+i8025
+i8050
+i8075
+i8100
+i8125
+i8150
+i8175
+i8200
+i8225
+i8250
+i8275
+i8300
+i8325
+i8350
+i8375
+i8400
+i8425
+i8450
+i8475
+i8500
+i8525
+i8550
+i8575
+i8600
+i8625
+i8650
+i8675
+i8700
+i8725
+i8750
+i8775
+i8800
+i8825
+i8850
+i8875
+i8900
+i8925
+i8950
+i8975
+i9000
+i9025
+i9050
+i9075
+i9100
+i9125
+i9150
+i9175
+i9200
+i9225
+i9250
+i9275
+i9300
+i9325
+i9350
+i9375
+i9400
+i9425
+i9450
+i9475
+i9500
+i9525
+i9544 - new best config long, score -32.34 adg_realized_per_exposure 0.2428 pa_distance_std 0.08187 pa_distance_mean 0.04167 hrs_stuck_max 7.7 loss_profit_ratio 2.201
+i9550
+i9575
+i9600
+i9625
+i9650
+i9675
+i9700
+i9725
+i9750
+i9775
+i9800
+i9825
+i9850
+i9875
+i9900
+i9925
+i9950
+i9975
+i10000
+i10025
+i10050
+Last result file is :  /home/krishna/flyingtoaster/passivbot/results_particle_swarm_optimization_recursive_grid/2022-12-12T01-04-01_SUSHIUSDT/all_results.txt
+python3 inspect_opt_results.py /home/krishna/flyingtoaster/passivbot/results_particle_swarm_optimization_recursive_grid/2022-12-12T01-04-01_SUSHIUSDT/all_results.txt -d
+not using numba
+n results 10055 score formula: adgrealizedPADstd, PAD max: [0.01, 0.01] loss_profit_ratio max: [0.1, 0.1]
+results long best config no 5745
+symbol               adg      PADmean  PADstd   lp_ratio score
+SUSHIUSDT            0.248330 0.083701 0.043684 2.170424 0.136695
+means                0.248330 0.083701 0.043684 2.170424
+{'DGstd_long': nan,
+ 'adg_DGstd_ratio_long': nan,
+ 'adg_long': -0.9845993400051243,
+ 'adg_per_exposure_long': -0.3938397360020497,
+ 'adg_realized_long': 0.5609719536962063,
+ 'adg_realized_per_exposure_long': 0.22438878147848254,
+ 'avg_fills_per_day_long': 157.68407803650095,
+ 'biggest_psize_long': 1312.1,
+ 'biggest_psize_quote_long': 6136.031664168368,
+ 'closest_bkr_long': 0.07025288248503479,
+ 'eqbal_ratio_mean_long': 0.9514182769358962,
+ 'eqbal_ratio_min_long': 0.11888927132997187,
+ 'equity_balance_ratio_mean_long': 0.9514182769358962,
+ 'equity_balance_ratio_std_long': 0.14089884139490375,
+ 'exchange': 'bybit',
+ 'fee_sum_long': -8.510285698416837,
+ 'final_balance_long': 2451.8696616363827,
+ 'final_equity_long': 291.50099746801425,
+ 'gain_long': -0.8583088933333247,
+ 'hrs_stuck_avg': 26.483333333333334,
+ 'hrs_stuck_avg_long': 0.41380208333333335,
+ 'hrs_stuck_max': 26.483333333333334,
+ 'hrs_stuck_max_long': 7.7,
+ 'loss_profit_ratio_long': 2.341434139488971,
+ 'loss_sum_long': -2247.229684168368,
+ 'n_closes_long': 27,
+ 'n_days': 1.1034722222222222,
+ 'n_entries_long': 146,
+ 'n_fills_long': 174,
+ 'n_ientries_long': 11,
+ 'n_normal_closes_long': 27,
+ 'n_rentries_long': 135,
+ 'n_unstuck_closes_long': 0,
+ 'n_unstuck_entries_long': 0,
+ 'net_pnl_plus_fees_long': -1295.9736256984038,
+ 'pa_distance_max_long': 0.5433983373762737,
+ 'pa_distance_mean_long': 0.04172430935057253,
+ 'pa_distance_std_long': 0.0818540481583119,
+ 'pnl_sum_long': -1287.463339999987,
+ 'profit_sum_long': 959.7663441683807,
+ 'starting_balance': 1500.0,
+ 'symbol': 'SUSHIUSDT',
+ 'volume_quote_long': 78966.82531999997}
+results short best config no 10055
+symbol               adg      PADmean  PADstd   lp_ratio score
+SUSHIUSDT            0.000000 1.000000 100.000000 1.000000 0.000000
+means                0.000000 1.000000 100.000000 1.000000
+{'DGstd_short': 100.0,
+ 'adg_DGstd_ratio_short': 0.0,
+ 'adg_per_exposure_short': 0.0,
+ 'adg_realized_per_exposure_short': 0.0,
+ 'adg_realized_short': 0.0,
+ 'adg_short': 0.0,
+ 'avg_fills_per_day_short': 0.0,
+ 'biggest_psize_quote_short': 0.0,
+ 'biggest_psize_short': nan,
+ 'closest_bkr_short': 1.0,
+ 'eqbal_ratio_mean_short': 1.0,
+ 'eqbal_ratio_min_short': 1.0,
+ 'equity_balance_ratio_mean_short': 1.0,
+ 'equity_balance_ratio_std_short': 0.0,
+ 'exchange': 'bybit',
+ 'fee_sum_short': 0,
+ 'final_balance_short': 1500.0,
+ 'final_equity_short': 1500.0,
+ 'gain_short': 0.0,
+ 'hrs_stuck_avg': 26.483333333333334,
+ 'hrs_stuck_avg_short': 26.483333333333334,
+ 'hrs_stuck_max': 26.483333333333334,
+ 'hrs_stuck_max_short': 26.483333333333334,
+ 'loss_profit_ratio_short': 1.0,
+ 'loss_sum_short': 0,
+ 'n_closes_short': 0,
+ 'n_days': 1.1034722222222222,
+ 'n_entries_short': 0,
+ 'n_fills_short': 0,
+ 'n_ientries_short': 0,
+ 'n_normal_closes_short': 0,
+ 'n_rentries_short': 0,
+ 'n_unstuck_closes_short': 0,
+ 'n_unstuck_entries_short': 0,
+ 'net_pnl_plus_fees_short': 0,
+ 'pa_distance_max_short': 100.0,
+ 'pa_distance_mean_short': 100.0,
+ 'pa_distance_std_short': 1.0,
+ 'pnl_sum_short': 0,
+ 'profit_sum_short': 0,
+ 'starting_balance': 1500.0,
+ 'symbol': 'SUSHIUSDT',
+ 'volume_quote_short': 0.0}
+dump_live_config /home/krishna/flyingtoaster/passivbot/results_particle_swarm_optimization_recursive_grid/2022-12-12T01-04-01_SUSHIUSDT/all_results_best_config.json
+
+sum adgs
+SUSHIUSDT    0.248330
+{"config_name": "recursive_grid_0days",
+ "logging_level": 0,
+ "long": {"auto_unstuck_ema_dist": 0.0,
+          "auto_unstuck_wallet_exposure_threshold": 0.0,
+          "backwards_tp": true,
+          "ddown_factor": 1.4928584893183219,
+          "ema_span_0": 188.1691705995986,
+          "ema_span_1": 462.701268063103,
+          "enabled": true,
+          "initial_eprice_ema_dist": -0.1,
+          "initial_qty_pct": 0.004122601196684555,
+          "markup_range": 0.026500526960135978,
+          "min_markup": 0.014510942900396484,
+          "n_close_orders": 3,
+          "rentry_pprice_dist": 0.011052846253651764,
+          "rentry_pprice_dist_wallet_exposure_weighting": 0.0,
+          "wallet_exposure_limit": 2.5},
+ "short": {"auto_unstuck_ema_dist": 0.005178763660094967,
+           "auto_unstuck_wallet_exposure_threshold": 0.0409577313275979,
+           "backwards_tp": true,
+           "ddown_factor": 0.9604009783119668,
+           "ema_span_0": 2579.900414827067,
+           "ema_span_1": 5149.523859762958,
+           "enabled": false,
+           "initial_eprice_ema_dist": -0.06086419331590859,
+           "initial_qty_pct": 0.015,
+           "markup_range": 0.025765126485749957,
+           "min_markup": 0.0029978743634306495,
+           "n_close_orders": 13,
+           "rentry_pprice_dist": 0.02612319779554305,
+           "rentry_pprice_dist_wallet_exposure_weighting": 7.250388985246689,
+           "wallet_exposure_limit": 0.1}}
+python3 backtest.py -b /home/krishna/flyingtoaster/passivbot/configs/backtest/_backtest_d2299e66d566d02031dc1189ba4af3ea.hjson.renamed.hjson /home/krishna/flyingtoaster/passivbot/con
+figs/live/PBSO/pso_recursive_noau_longonly_0.3/SUSHIUSDT_20221211214111_d2299//config.json
+using numba
+using numba
+using numba
+fetching market_specific_settings...
+linear perpetual
+ERROR:root:error with update position list index out of range
+Traceback (most recent call last):
+  File "/home/krishna/flyingtoaster/passivbot/passivbot.py", line 277, in update_position
+    position = await self.fetch_position()
+  File "/home/krishna/flyingtoaster/passivbot/bybit.py", line 238, in fetch_position
+    long_pos = [e for e in fetched["result"] if e["side"] == "Buy"][0]
+IndexError: list index out of range
+
+exchange                bybit
+spot                    False
+symbol                  SUSHIUSDT
+market_type             futures
+starting_balance        1500
+start_date              2016-01-01
+end_date                2022-11-23
+latency_simulation_ms   1000
+base_dir                backtests
+
+2022-12-12T00:46:42  Loading cached tick data from backtests/bybit/SUSHIUSDT/caches/2016-01-01_2022-11-23_ticks_cache.npy
+{'config_name': 'recursive_grid_0days',
+ 'logging_level': 0,
+ 'long': {'auto_unstuck_ema_dist': 0.0,
+          'auto_unstuck_wallet_exposure_threshold': 0.0,
+          'backwards_tp': True,
+          'ddown_factor': 1.4928584893183219,
+          'ema_span_0': 188.1691705995986,
+          'ema_span_1': 462.701268063103,
+          'enabled': True,
+          'initial_eprice_ema_dist': -0.1,
+          'initial_qty_pct': 0.004122601196684555,
+          'markup_range': 0.026500526960135978,
+          'min_markup': 0.014510942900396484,
+          'n_close_orders': 3,
+          'rentry_pprice_dist': 0.011052846253651764,
+          'rentry_pprice_dist_wallet_exposure_weighting': 0.0,
+          'wallet_exposure_limit': 2.5},
+ 'short': {'auto_unstuck_ema_dist': 0.005178763660094967,
+           'auto_unstuck_wallet_exposure_threshold': 0.0409577313275979,
+           'backwards_tp': True,
+           'ddown_factor': 0.9604009783119668,
+           'ema_span_0': 2579.900414827067,
+           'ema_span_1': 5149.523859762958,
+           'enabled': False,
+           'initial_eprice_ema_dist': -0.06086419331590859,
+           'initial_qty_pct': 0.015,
+           'markup_range': 0.025765126485749957,
+           'min_markup': 0.0029978743634306495,
+           'n_close_orders': 13,
+           'rentry_pprice_dist': 0.02612319779554305,
+           'rentry_pprice_dist_wallet_exposure_weighting': 7.250388985246689,
+           'wallet_exposure_limit': 0.1}}
+n_days 809.7
+starting_balance 1500
+backtesting...
+26.80 seconds elapsed
+dumping plots...
+writing backtest_result.txt...
+
++-----------------------------------------+
+|                 Summary                 |
++-----------------------------+-----------+
+| Metric                      | Value     |
++-----------------------------+-----------+
+| Exchange                    | binance   |
+| Market type                 | futures   |
+| Symbol                      | SUSHIUSDT |
+| No. days                    | 1.10347   |
+| Starting balance            | 1500.0    |
+|                             |           |
+| Long                        | True      |
+| ADG realized per exposure   | 24.8%     |
+| Final balance               | 2555.82   |
+| Final equity                | 282.699   |
+| Net PNL + fees              | -1256.18  |
+| Total gain                  | -83.09%   |
+| Average daily gain          | -98.5%    |
+| Loss to profit ratio        | 2.17      |
+| Price action distance mean  | 0.0436841 |
+| Price action distance std   | 0.0837014 |
+| Price action distance max   | 0.551336  |
+| Closest bankruptcy          | 6.548%    |
+| Lowest equity/balance ratio | 0.1106    |
+| Equity/balance ratio std    | 0.1439    |
+| No. fills                   | 201       |
+| No. entries                 | 170       |
+| No. closes                  | 30        |
+| No. initial entries         | 11        |
+| No. reentries               | 159       |
+| No. unstuck entries         | 0         |
+| No. unstuck closes          | 0         |
+| No. normal closes           | 30        |
+| Average n fills per day     | 182.0     |
+| Mean hours stuck            | 0.353111  |
+| Max hours stuck             | 7.71667   |
+| PNL sum                     | -1246.0   |
+| Profit sum                  | 1065.0    |
+| Loss sum                    | -2311.0   |
+| Fee sum                     | -9.755    |
+| Biggest pos size            | 1360.7    |
+| Biggest pos cost            | 6396.0    |
+| Volume quote                | 91151.9   |
++-----------------------------+-----------+
+
+plotting balance and equity long...
+long 0 of 58 0.00% to 1.72%
+long 1 of 58 1.72% to 3.45%
+long 2 of 58 3.45% to 5.17%
+long 3 of 58 5.17% to 6.90%
+long 4 of 58 6.90% to 8.62%
+long 5 of 58 8.62% to 10.34%
+long 6 of 58 10.34% to 12.07%
+long 7 of 58 12.07% to 13.79%
+long 8 of 58 13.79% to 15.52%
+long 9 of 58 15.52% to 17.24%
+long 10 of 58 17.24% to 18.97%
+long 11 of 58 18.97% to 20.69%
+long 12 of 58 20.69% to 22.41%
+long 13 of 58 22.41% to 24.14%
+long 14 of 58 24.14% to 25.86%
+long 15 of 58 25.86% to 27.59%
+long 16 of 58 27.59% to 29.31%
+long 17 of 58 29.31% to 31.03%
+long 18 of 58 31.03% to 32.76%
+long 19 of 58 32.76% to 34.48%
+long 20 of 58 34.48% to 36.21%
+long 21 of 58 36.21% to 37.93%
+long 22 of 58 37.93% to 39.66%
+long 23 of 58 39.66% to 41.38%
+long 24 of 58 41.38% to 43.10%
+long 25 of 58 43.10% to 44.83%
+long 26 of 58 44.83% to 46.55%
+long 27 of 58 46.55% to 48.28%
+long 28 of 58 48.28% to 50.00%
+long 29 of 58 50.00% to 51.72%
+long 30 of 58 51.72% to 53.45%
+long 31 of 58 53.45% to 55.17%
+long 32 of 58 55.17% to 56.90%
+long 33 of 58 56.90% to 58.62%
+long 34 of 58 58.62% to 60.34%
+long 35 of 58 60.34% to 62.07%
+long 36 of 58 62.07% to 63.79%
+long 37 of 58 63.79% to 65.52%
+long 38 of 58 65.52% to 67.24%
+long 39 of 58 67.24% to 68.97%
+long 40 of 58 68.97% to 70.69%
+long 41 of 58 70.69% to 72.41%
+long 42 of 58 72.41% to 74.14%
+long 43 of 58 74.14% to 75.86%
+long 44 of 58 75.86% to 77.59%
+long 45 of 58 77.59% to 79.31%
+long 46 of 58 79.31% to 81.03%
+long 47 of 58 81.03% to 82.76%
+long 48 of 58 82.76% to 84.48%
+long 49 of 58 84.48% to 86.21%
+long 50 of 58 86.21% to 87.93%
+long 51 of 58 87.93% to 89.66%
+long 52 of 58 89.66% to 91.38%
+long 53 of 58 91.38% to 93.10%
+long 54 of 58 93.10% to 94.83%
+long 55 of 58 94.83% to 96.55%
+long 56 of 58 96.55% to 98.28%
+long 57 of 58 98.28% to 100.00%
+plotting long initial entry band
+plotting pos sizes...
+Start Optimize loop DOTUSDT
+python3 particle_swarm_optimization.py -o /home/krishna/flyingtoaster/passivbot/configs/optimize/_optimizer_d2299e66d566d02031dc1189ba4af3ea.hjson.renamed.hjson -b /home/krishna/flyi
+ngtoaster/passivbot/configs/backtest/_backtest_d2299e66d566d02031dc1189ba4af3ea.hjson
+using numba
+using numba
+using numba
+fetching market_specific_settings...
+linear perpetual
+error with update position list index out of range
+Traceback (most recent call last):
+  File "/home/krishna/flyingtoaster/passivbot/passivbot.py", line 277, in update_position
+    position = await self.fetch_position()
+  File "/home/krishna/flyingtoaster/passivbot/bybit.py", line 238, in fetch_position
+    long_pos = [e for e in fetched["result"] if e["side"] == "Buy"][0]
+IndexError: list index out of range
+
+optimize_config_path              /home/krishna/flyingtoaster/passivbot/configs/optimize/_optimizer_d2299e66d566d02031dc1189ba4af3ea.hjson.renamed.hjson
+ohlcv                             False
+nojit                             False
+backtest_config_path              /home/krishna/flyingtoaster/passivbot/configs/backtest/_backtest_d2299e66d566d02031dc1189ba4af3ea.hjson
+start_date                        2016-01-01
+end_date                          2022-11-23
+w                                 0.73
+c0                                1
+c1                                0.5
+maximum_pa_distance_std_long      0.01
+maximum_pa_distance_std_short     0.01
+maximum_pa_distance_mean_long     0.01
+maximum_pa_distance_mean_short    0.01
+maximum_loss_profit_ratio_long    0.1
+maximum_loss_profit_ratio_short   0.1
+
+starting new initial eval 1 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.1 em_0403.0 em_1189.0 ened1.0 inst-0.1 inct0.00562 mage0.0377 miup0.00415 n_rs4.41 rest0.0257 reng0.0 wait2.5
+starting new initial eval 2 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.4 em_0762.0 em_1816.0 ened1.0 inst-0.1 inct0.0058 mage0.025 miup0.0105 n_rs4.26 rest0.0333 reng0.0 wait2.5
+starting new initial eval 3 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.86 em_0353.0 em_1920.0 ened1.0 inst-0.1 inct0.00615 mage0.0198 miup0.00373 n_rs4.68 rest0.0332 reng0.0 wait2.
+5
+starting new initial eval 4 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.38 em_0252.0 em_1197.0 ened1.0 inst-0.1 inct0.00238 mage0.018 miup0.00687 n_rs3.03 rest0.0201 reng0.0 wait2.5
+starting new initial eval 5 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.64 em_054.5 em_1842.0 ened1.0 inst-0.1 inct0.00599 mage0.0169 miup0.0188 n_rs4.91 rest0.04 reng0.0 wait2.5
+starting new initial eval 6 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.62 em_075.5 em_180.1 ened1.0 inst-0.1 inct0.00636 mage0.0345 miup0.00425 n_rs4.86 rest0.0349 reng0.0 wait2.5
+starting new initial eval 7 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.67 em_0663.0 em_1816.0 ened1.0 inst-0.1 inct0.00373 mage0.0388 miup0.00777 n_rs4.33 rest0.0286 reng0.0 wait2.
+5
+starting new initial eval 8 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.01 em_099.2 em_1200.0 ened1.0 inst-0.1 inct0.00573 mage0.0289 miup0.0157 n_rs4.93 rest0.0347 reng0.0 wait2.5
+starting new initial eval 9 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.8 em_0916.0 em_1189.0 ened1.0 inst-0.1 inct0.00411 mage0.0192 miup0.0168 n_rs4.84 rest0.044 reng0.0 wait2.5
+starting new initial eval 10 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.95 em_0292.0 em_1571.0 ened1.0 inst-0.1 inct0.00571 mage0.0182 miup0.0137 n_rs2.74 rest0.0255 reng0.0 wait2.
+5
+starting new initial eval 11 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.55 em_0774.0 em_1645.0 ened1.0 inst-0.1 inct0.0033 mage0.0294 miup0.00798 n_rs2.72 rest0.0438 reng0.0 wait2.
+5
+starting new initial eval 12 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.31 em_0979.0 em_1769.0 ened1.0 inst-0.1 inct0.00464 mage0.0147 miup0.0171 n_rs2.01 rest0.0405 reng0.0 wait2.
+5
+starting new initial eval 13 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.02 em_0621.0 em_1778.0 ened1.0 inst-0.1 inct0.00261 mage0.024 miup0.0168 n_rs3.8 rest0.0409 reng0.0 wait2.5
+starting new initial eval 14 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.52 em_0917.0 em_1760.0 ened1.0 inst-0.1 inct0.00277 mage0.0147 miup0.0125 n_rs3.4 rest0.0449 reng0.0 wait2.5
+starting new initial eval 15 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.85 em_0632.0 em_1924.0 ened1.0 inst-0.1 inct0.00346 mage0.0216 miup0.00203 n_rs2.93 rest0.0179 reng0.0 wait2
+.5
+starting new initial eval 16 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.33 em_077.6 em_1713.0 ened1.0 inst-0.1 inct0.00679 mage0.0126 miup0.00342 n_rs3.69 rest0.0479 reng0.0 wait2.
+5
+starting new initial eval 17 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.48 em_0357.0 em_1482.0 ened1.0 inst-0.1 inct0.00633 mage0.0371 miup0.00314 n_rs2.3 rest0.0123 reng0.0 wait2.
+5
+starting new initial eval 18 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.11 em_0478.0 em_1193.0 ened1.0 inst-0.1 inct0.00346 mage0.012 miup0.0153 n_rs2.99 rest0.0469 reng0.0 wait2.5
+starting new initial eval 19 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.02 em_0863.0 em_1468.0 ened1.0 inst-0.1 inct0.00384 mage0.0128 miup0.00403 n_rs4.17 rest0.0402 reng0.0 wait2
+.5
+starting new initial eval 20 of 24  - long: aust0.0 auld0.0 batp1.0 ddor1.05 em_0896.0 em_1697.0 ened1.0 inst-0.1 inct0.00632 mage0.011 miup0.0127 n_rs4.73 rest0.0496 reng0.0 wait2.5
+starting new initial eval 21 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.49 em_0307.0 em_1248.0 ened1.0 inst-0.1 inct0.00214 mage0.0118 miup0.0125 n_rs3.31 rest0.021 reng0.0 wait2.5
+starting new initial eval 22 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.23 em_0215.0 em_1851.0 ened1.0 inst-0.1 inct0.00665 mage0.0159 miup0.00641 n_rs3.7 rest0.0299 reng0.0 wait2.
+5
+starting new initial eval 23 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.89 em_0195.0 em_1849.0 ened1.0 inst-0.1 inct0.00666 mage0.0183 miup0.00388 n_rs2.73 rest0.0112 reng0.0 wait2
+.5
+starting new initial eval 24 of 24  - long: aust0.0 auld0.0 batp1.0 ddor2.37 em_0854.0 em_128.0 ened1.0 inst-0.1 inct0.00392 mage0.0376 miup0.00688 n_rs2.18 rest0.0446 reng0.0 wait2.
+5
+i1 - new best config long, score -6.739 adg_realized_per_exposure 0.01683 pa_distance_std 0.0484 pa_distance_mean 0.02566 hrs_stuck_max 35.3 loss_profit_ratio 2.011
+i1 - new best config short, score -0.0 adg_realized_per_exposure 0.0 pa_distance_std 1.0 pa_distance_mean 100.0 hrs_stuck_max 347.9 loss_profit_ratio 1.0
+i17 - new best config long, score -12.74 adg_realized_per_exposure 0.04148 pa_distance_std 0.062 pa_distance_mean 0.04502 hrs_stuck_max 45.48 loss_profit_ratio 1.167
+i44 - new best config long, score -20.07 adg_realized_per_exposure 0.03809 pa_distance_std 0.05267 pa_distance_mean 0.02977 hrs_stuck_max 35.37 loss_profit_ratio 1.211
+i25
+i50
+i100
+i93 - new best config long, score -45.92 adg_realized_per_exposure 0.04797 pa_distance_std 0.04824 pa_distance_mean 0.0198 hrs_stuck_max 35.32 loss_profit_ratio 1.094
+i75
+i150
+i125
+i200
+i175
+i225
+i250
+i300
+i275
+i325
+i375
+i400
+i350
+i425
+i475
+i500
+i450
+i550
+i525
+^CProcess ForkPoolWorker-29:
+Process ForkPoolWorker-46:
+Process ForkPoolWorker-31:
+Process ForkPoolWorker-38:
+Process ForkPoolWorker-50:
+Process ForkPoolWorker-21:
+Process ForkPoolWorker-43:
+Process ForkPoolWorker-36:
+Process ForkPoolWorker-10:
+Process ForkPoolWorker-39:
+Process ForkPoolWorker-52:
+Process ForkPoolWorker-42:
+Process ForkPoolWorker-11:
+Process ForkPoolWorker-44:
+Process ForkPoolWorker-47:
+Process ForkPoolWorker-28:
+Process ForkPoolWorker-34:
+Process ForkPoolWorker-48:
+Process ForkPoolWorker-49:
+Process ForkPoolWorker-7:
+Process ForkPoolWorker-22:
+Process ForkPoolWorker-41:
+Process ForkPoolWorker-4:
+Process ForkPoolWorker-16:
+Process ForkPoolWorker-9:
+Process ForkPoolWorker-18:
+Process ForkPoolWorker-25:
+Process ForkPoolWorker-23:
+Process ForkPoolWorker-5:
+Process ForkPoolWorker-26:
+Process ForkPoolWorker-35:
+Process ForkPoolWorker-24:
+Process ForkPoolWorker-32:
+Process ForkPoolWorker-19:
+Process ForkPoolWorker-13:
+Process ForkPoolWorker-20:
+Process ForkPoolWorker-17:
+Process ForkPoolWorker-14:
+Process ForkPoolWorker-51:
+Process ForkPoolWorker-15:
+Process ForkPoolWorker-27:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+Traceback (most recent call last):
+KeyboardInterrupt
+Traceback (most recent call last):
+Process ForkPoolWorker-45:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+Traceback (most recent call last):
+KeyboardInterrupt
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 67, in backtest_wrap
+    longs, shorts, sdf, analysis = analyze_fills(fills_long, fills_short, stats, config)
+  File "/home/krishna/flyingtoaster/passivbot/pure_funcs.py", line 619, in analyze_fills
+    sdf.loc[:, "wallet_exposure_long"] = [
+  File "/home/krishna/flyingtoaster/passivbot/pure_funcs.py", line 620, in <listcomp>
+    qty_to_cost(x.psize_long, x.pprice_long, config["inverse"], config["c_mult"]) / x.balance_long
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "particle_swarm_optimization.py", line 761, in <module>
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+    asyncio.run(main())
+  File "/usr/lib64/python3.8/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib64/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+    self.run_forever()
+  File "/usr/lib64/python3.8/asyncio/base_events.py", line 570, in run_forever
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 356, in get
+    res = self._reader.recv_bytes()
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 220, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 418, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 383, in _recv
+    chunk = read(handle, remaining)
+    self._run_once()
+  File "/usr/lib64/python3.8/asyncio/base_events.py", line 1859, in _run_once
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+    handle._run()
+  File "/usr/lib64/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "particle_swarm_optimization.py", line 757, in main
+    particle_swarm_optimization.run()
+  File "particle_swarm_optimization.py", line 437, in run
+    self.run_()
+  File "particle_swarm_optimization.py", line 541, in run_
+    sleep(0.25)
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 114, in worker
+    task = get()
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 355, in get
+    with self._rlock:
+  File "/usr/lib64/python3.8/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Exception ignored in: <function _on_type_disposal at 0x7f7904067d30>
+Traceback (most recent call last):
+  File "/home/krishna/.local/lib/python3.8/site-packages/numba/core/types/abstract.py", line 27, in _on_type_disposal
+    def _on_type_disposal(wr, _pop=_typecache.pop):
+KeyboardInterrupt:
+Process ForkPoolWorker-37:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 64, in backtest_wrap
+    ticks = np.load(config_["ticks_cache_fname"])
+  File "/home/krishna/.local/lib/python3.8/site-packages/numpy/lib/npyio.py", line 440, in load
+    return format.read_array(fid, allow_pickle=allow_pickle,
+  File "/home/krishna/.local/lib/python3.8/site-packages/numpy/lib/format.py", line 757, in read_array
+    array = numpy.fromfile(fp, dtype=dtype, count=count)
+KeyboardInterrupt
+End of process
+Deleting unused files
+[krishna@optimize scripts]$ Process ForkPoolWorker-30:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 66, in backtest_wrap
+    fills_long, fills_short, stats = backtest(config, ticks)
+  File "/home/krishna/flyingtoaster/passivbot/backtest.py", line 39, in backtest
+    return backtest_recursive_grid(
+KeyboardInterrupt
+Process ForkPoolWorker-12:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 64, in backtest_wrap
+    ticks = np.load(config_["ticks_cache_fname"])
+  File "/home/krishna/.local/lib/python3.8/site-packages/numpy/lib/npyio.py", line 440, in load
+    return format.read_array(fid, allow_pickle=allow_pickle,
+  File "/home/krishna/.local/lib/python3.8/site-packages/numpy/lib/format.py", line 757, in read_array
+    array = numpy.fromfile(fp, dtype=dtype, count=count)
+KeyboardInterrupt
+Process ForkPoolWorker-1:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 64, in backtest_wrap
+    ticks = np.load(config_["ticks_cache_fname"])
+  File "/home/krishna/.local/lib/python3.8/site-packages/numpy/lib/npyio.py", line 440, in load
+    return format.read_array(fid, allow_pickle=allow_pickle,
+  File "/home/krishna/.local/lib/python3.8/site-packages/numpy/lib/format.py", line 757, in read_array
+    array = numpy.fromfile(fp, dtype=dtype, count=count)
+KeyboardInterrupt
+Process ForkPoolWorker-40:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 66, in backtest_wrap
+    fills_long, fills_short, stats = backtest(config, ticks)
+  File "/home/krishna/flyingtoaster/passivbot/backtest.py", line 39, in backtest
+    return backtest_recursive_grid(
+KeyboardInterrupt
+Process ForkPoolWorker-3:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 66, in backtest_wrap
+    fills_long, fills_short, stats = backtest(config, ticks)
+  File "/home/krishna/flyingtoaster/passivbot/backtest.py", line 39, in backtest
+    return backtest_recursive_grid(
+KeyboardInterrupt
+^C
+[krishna@optimize scripts]$ Process ForkPoolWorker-6:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 66, in backtest_wrap
+    fills_long, fills_short, stats = backtest(config, ticks)
+  File "/home/krishna/flyingtoaster/passivbot/backtest.py", line 39, in backtest
+    return backtest_recursive_grid(
+KeyboardInterrupt
+Process ForkPoolWorker-33:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 368, in put
+    self._writer.send_bytes(obj)
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 204, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 415, in _send_bytes
+    self._send(header + buf)
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 372, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/usr/lib64/python3.8/multiprocessing/queues.py", line 368, in put
+    self._writer.send_bytes(obj)
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 204, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 415, in _send_bytes
+    self._send(header + buf)
+  File "/usr/lib64/python3.8/multiprocessing/connection.py", line 372, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+python3 pso_bulk_opt.py pso_recursive_noau_longonly_0.3.hjson Process ForkPoolWorker-8:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 66, in backtest_wrap
+    fills_long, fills_short, stats = backtest(config, ticks)
+  File "/home/krishna/flyingtoaster/passivbot/backtest.py", line 39, in backtest
+    return backtest_recursive_grid(
+KeyboardInterrupt
+^C
+[krishna@optimize scripts]$ python3 pso_bulk_opt.py pso_recursive_noau_longonly_0.3.hjson Process ForkPoolWorker-2:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/lib64/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib64/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "particle_swarm_optimization.py", line 66, in backtest_wrap
+    fills_long, fills_short, stats = backtest(config, ticks)
+  File "/home/krishna/flyingtoaster/passivbot/backtest.py", line 39, in backtest
+    return backtest_recursive_grid(
+KeyboardInterrupt
+^C
+[krishna@optimize scripts]$
