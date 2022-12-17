@@ -1,0 +1,71 @@
+{
+    "harmony_config_file" : "../configs/optimize/harmony_search.hjson"
+    "backtest_config_file" : "../configs/backtest/default.hjson"
+    
+    coin_list : [
+    { "coin": "MATICUSDT"},
+    { "coin": "DOGEUSDT"},
+    { "coin": "SUSHIUSDT"},
+    { "coin": "DOTUSDT"},
+    { "coin": "XRPUSDT"},
+    { "coin": "XTZUSDT"},
+    { "coin": "HBARUSDT"},
+    { "coin": "EOSUSDT"},
+    { "coin": "SANDUSDT"},
+    { "coin": "OPUSDT" },
+    { "coin": "CHZUSDT"},
+    { "coin": "DYDXUSDT"},
+    { "coin": "ATOMUSDT"},
+    { "coin": "LINKUSDT"},
+    { "coin": "MANAUSDT"},
+
+        // other samples :
+        // {coin : "XRPUSDT,ADAUSDT,BTCUSDT"}, # Allow multi coin optimize
+        // {coin : "MATICUSDT", harmony_starting_config : "../configs/live/opti/matic/hm_010032.json"},
+        // {coin : "BTCCUSDT",  harmony_starting_config : "../configs/live/opti/btc/hm_0154644.json"},
+    ]
+    "override_bt_and_opti" : {
+        starting_balance : 1500,
+        ohlc : false, # or false
+        # nb_days : 1000,
+        # you can set nb_days, or start_date & end_date
+        start_date : 2016-01-01,
+        end_date : 2022-11-23,
+    }
+"override_harmony_config" : {
+    // # allow to subdefine all parameters
+    score_formula: adg_realized_PAD_std
+    passivbot_mode: recursive_grid
+    iters : 15000,
+    n_cpus : 52,
+    do_long: true,
+    do_short: false,
+    backwards_tp_long: false,
+    backwards_tp_short: false,
+    maximum_pa_distance_std_long: 0.01,
+    maximum_pa_distance_std_short: 0.01,
+    maximum_pa_distance_mean_long: 0.01,
+    maximum_pa_distance_mean_short: 0.01,
+    maximum_hrs_stuck_max_long: 100,
+    maximum_hrs_stuck_max_short: 100,
+    "strategies_long_and_short" : {
+    },
+    "strategies_long" : {
+        ema_span_0: [10, 1000]
+        ema_span_1: [10, 1000]
+        initial_qty_pct: [0.002, 0.007]
+        initial_eprice_ema_dist: [-0.1, -0.1]
+        wallet_exposure_limit: [1.0, 1.0]
+        ddown_factor: [1.0, 3.0]
+        rentry_pprice_dist: [0.01, 0.05]
+        rentry_pprice_dist_wallet_exposure_weighting: [0.0, 0.0]
+        min_markup: [0.002, 0.02]
+        markup_range: [0.01, 0.04]
+        n_close_orders: [2, 5]
+        auto_unstuck_wallet_exposure_threshold: [0.0, 0.0]
+        auto_unstuck_ema_dist: [0.0, 0.0]
+    },
+    "strategies_short" : {
+    },
+}
+}
