@@ -1,0 +1,14 @@
+{
+ "market_type": "futures",
+ "user": "backtest_account",
+ "symbol": "XTZUSDT",
+ "latency_simulation_ms": 1000,
+ "starting_balance": 1500,
+ "start_date": "2016-01-01",
+ "end_date": "2023-01-01",
+ "historical_data_path": "/storage/",
+ "base_dir": "backtests",
+ "enable_interactive_plot": false,
+ "plot_theme": "light",
+ "plot_candles_interval": "1m"
+}
