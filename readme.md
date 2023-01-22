@@ -5,6 +5,7 @@
 ### Current configs of interest
 * (**BEST FROM LIVE FEEDBACK**) 
 * https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/harmony/recursive/longshort/harmony_recurv_auenabled_longshort_0.25_0.12WE_bwtp_off
+* https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/harmony/recursive/longonly/harmony_recurv_noau_longonly_1.0WE_bwtpoff
 
 ##### Particle swarm (**UPDATED 12/04/22**)
   * Recursive: https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/particle_swarm/recursive
