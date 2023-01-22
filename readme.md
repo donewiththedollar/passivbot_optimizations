@@ -1,10 +1,6 @@
 # Passivbot Configurations
 ## Updates
-  * **12/21/22** - Check out updated links below
-  
-  * **Current working directories**:
-  * https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/particle_swarm/recursive
-  * https://github.com/donewiththedollar/passivbot_v5.8.0/tree/main/configs/harmony
+  * **1/21/23** - I'm still here somehow
   * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
 #### Current configs of interest
 ##### 1m
