@@ -1,0 +1,100 @@
+{
+"harmony_config_file" : "../configs/optimize/harmony_search.hjson",
+"backtest_config_file" : "../configs/backtest/default.hjson",
+
+coin_list : [
+    {coin : "DOGEUSDT"},
+    {coin : "MATICUSDT"},
+    {coin : "MANAUSDT"},
+    {coin : "ETHUSDT"},
+    {coin : "XMRUSDT"},
+    {coin : "KSMUSDT"},
+    {coin : "COMPUSDT"},
+    {coin : "XRPUSDT"},
+    {coin : "AVAXUSDT"},
+    {coin : "LTCUSDT"},
+    {coin : "ATOMUSDT"},
+    {coin : "BNBUSDT"},
+    {coin : "ADAUSDT"},
+    {coin : "BTCUSDT"},
+    {coin : "ADAUSDT"},
+    {coin : "EOSUSDT"},
+    // {coin : "XRPUSDT,ADAUSDT,BTCUSDT"}, # Allow multi coin optimize
+    // {coin : "ADAUSDT"},
+    // other samples :
+    // {coin : "MATICUSDT", harmony_starting_config : "../configs/live/opti/matic/hm_010032.json"},
+    // {coin : "BTCCUSDT",  harmony_starting_config : "../configs/live/opti/btc/hm_0154644.json"},
+]
+"override_bt_and_opti" : {
+    starting_balance : 500,
+    // # if you set ohlc to true, both the optimizer and backtest will use ohlc data
+    // # you can use ohlc_bt and ohlc_opti instead of ohlc if you want more finegrained control over which data is used for the optimizer and backtest
+    // ohlc : true, # or false
+    ohlc_bt : true, # or false
+    ohlc_opti : true, # or false
+    // nb_days : 365,
+    // # you can set nb_days, or start_date & end_date
+     start_date : "2018-01-01",  
+     end_date : "2023-01-01",
+}
+"override_harmony_config" : {
+    // # allow to subdefine all parameters
+    passivbot_mode: emas
+    iters : 30000,
+    n_cpus : 90,
+    do_long: true,
+    do_short: false,
+    backwards_tp_long: true,
+    backwards_tp_short: false,
+    maximum_pa_distance_std_long: 0.010
+    maximum_pa_distance_std_short: 0.010
+    maximum_pa_distance_mean_long: 0.010
+    maximum_pa_distance_mean_short: 0.010
+    maximum_loss_profit_ratio_long: 0.25
+    maximum_loss_profit_ratio_short: 0.25
+    maximum_hrs_stuck_max_long: 100.0
+    maximum_hrs_stuck_max_short: 100.0
+    minimum_eqbal_ratio_min_long: 0.5
+    minimum_eqbal_ratio_min_short: 0.5
+    clip_threshold: 0.0
+
+    "strategies_long_and_short" : {
+    },
+    "strategies_long" : {
+        ema_span_0: [5.0, 1500.0]
+        ema_span_1: [5.0, 4000.0]
+        ema_dist_lower: [-1.0, 0.02]
+        ema_dist_upper: [-1.0, 0.02]
+        qty_pct_entry: [0.001, 0.075]
+        qty_pct_close: [0.001, 0.075]
+        we_multiplier_entry: [-150, 150.0]
+        we_multiplier_close: [-150, 150.0]
+        delay_weight_entry: [-100.0, 150.0]
+        delay_weight_close: [-100.0, 150.0]
+        delay_between_fills_minutes_entry: [-500, 500.0]
+        delay_between_fills_minutes_close: [-500, 500.0]
+        min_markup: [0.001, 0.02]
+        markup_range: [0.001, 0.03]
+        n_close_orders: [2, 5]
+        wallet_exposure_limit: [1.0, 1.0]
+    },
+    "strategies_short" : {
+        ema_span_0: [10.0, 1500.0]
+        ema_span_1: [10.0, 4000.0]
+        ema_dist_lower: [0.0, 0.02]
+        ema_dist_upper: [0.0, 0.02]
+        qty_pct_entry: [0.001, 0.075]
+        qty_pct_close: [0.001, 0.075]
+        we_multiplier_entry: [0.0, 150.0]
+        we_multiplier_close: [0.0, 150.0]
+        delay_weight_entry: [0.0, 150.0]
+        delay_weight_close: [-100.0, 100.0]
+        delay_between_fills_minutes_entry: [1.0, 500.0]
+        delay_between_fills_minutes_close: [1.0, 500.0]
+        min_markup: [0.001, 0.02]
+        markup_range: [0.001, 0.03]
+        n_close_orders: [2, 5]
+        wallet_exposure_limit: [1.0, 1.0]
+    },
+}
+}
