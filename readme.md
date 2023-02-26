@@ -1,7 +1,7 @@
 # Passivbot Configurations
 ## Updates
-  * **1/21/23** - I'm still here somehow
-  * Currently optimizing with 1s tick on single asset in bulk batches. Backtest is in 1s tick as well.
+  * **2/26/23** - We still have not given up
+  * Currently optimizing with OHLCV
 ### Current configs of interest
 * (**BEST FROM LIVE FEEDBACK**) 
 * https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/harmony/recursive/longshort/harmony_recurv_auenabled_longshort_0.25_0.12WE_bwtp_off
