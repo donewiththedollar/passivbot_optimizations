@@ -1,0 +1,44 @@
++----------------------------------------------+
+|                   Summary                    |
++-----------------------------+----------------+
+| Metric                      | Value          |
++-----------------------------+----------------+
+| Exchange                    | bybit          |
+| Market type                 | futures        |
+| Symbol                      | ATOMUSDT       |
+| Passivbot mode              | recursive_grid |
+| No. days                    | 1100.0         |
+| Starting balance            | 1000.0         |
+|                             |                |
+| Long                        | True           |
+| ADG realized per exposure   | 0.117%         |
+| Final balance               | 3656.09        |
+| Final equity                | 3656.09        |
+| Net PNL + fees              | 2656.09        |
+| Total gain                  | 272.6%         |
+| Average daily gain          | 0.117%         |
+| Net PNL + fees              | 2656.09        |
+| Loss to profit ratio        | 0.03168        |
+| Price action distance mean  | 0.0209374      |
+| Price action distance std   | 0.0584948      |
+| Price action distance max   | 2.73651        |
+| Closest bankruptcy          | 99.49%         |
+| Lowest equity/balance ratio | 0.2666         |
+| Equity/balance ratio std    | 0.02433        |
+| No. fills                   | 9687           |
+| No. entries                 | 5215           |
+| No. closes                  | 4472           |
+| No. initial entries         | 4184           |
+| No. reentries               | 988            |
+| No. unstuck/EMA entries     | 43             |
+| No. unstuck/EMA closes      | 79             |
+| No. normal closes           | 4393           |
+| Average n fills per day     | 8.71           |
+| Mean hours stuck            | 2.75441        |
+| Max hours stuck             | 108.367        |
+| PNL sum                     | 2726.0         |
+| Profit sum                  | 2816.0         |
+| Loss sum                    | -89.21         |
+| Fee sum                     | -70.36         |
+| Volume quote                | 753210.0       |
++-----------------------------+----------------+
