@@ -1,0 +1,44 @@
++----------------------------------------------+
+|                   Summary                    |
++-----------------------------+----------------+
+| Metric                      | Value          |
++-----------------------------+----------------+
+| Exchange                    | bybit          |
+| Market type                 | futures        |
+| Symbol                      | ETCUSDT        |
+| Passivbot mode              | recursive_grid |
+| No. days                    | 1100.0         |
+| Starting balance            | 1000.0         |
+|                             |                |
+| Long                        | True           |
+| ADG realized per exposure   | 0.263%         |
+| Final balance               | 19712.8        |
+| Final equity                | 19709.7        |
+| Net PNL + fees              | 18712.8        |
+| Total gain                  | 1973.0%        |
+| Average daily gain          | 0.263%         |
+| Net PNL + fees              | 18712.8        |
+| Loss to profit ratio        | 0.03934        |
+| Price action distance mean  | 0.00811274     |
+| Price action distance std   | 0.0118528      |
+| Price action distance max   | 0.450849       |
+| Closest bankruptcy          | 99.48%         |
+| Lowest equity/balance ratio | 0.6888         |
+| Equity/balance ratio std    | 0.008994       |
+| No. fills                   | 48691          |
+| No. entries                 | 26682          |
+| No. closes                  | 22009          |
+| No. initial entries         | 21300          |
+| No. reentries               | 4749           |
+| No. unstuck/EMA entries     | 633            |
+| No. unstuck/EMA closes      | 519            |
+| No. normal closes           | 21490          |
+| Average n fills per day     | 42.9           |
+| Mean hours stuck            | 0.558736       |
+| Max hours stuck             | 60.7167        |
+| PNL sum                     | 19730.0        |
+| Profit sum                  | 20540.0        |
+| Loss sum                    | -807.9         |
+| Fee sum                     | -1015.0        |
+| Volume quote                | 14970300.0     |
++-----------------------------+----------------+
