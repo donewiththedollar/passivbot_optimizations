@@ -1,0 +1,44 @@
++----------------------------------------------+
+|                   Summary                    |
++-----------------------------+----------------+
+| Metric                      | Value          |
++-----------------------------+----------------+
+| Exchange                    | bybit          |
+| Market type                 | futures        |
+| Symbol                      | XMRUSDT        |
+| Passivbot mode              | recursive_grid |
+| No. days                    | 1100.0         |
+| Starting balance            | 1000.0         |
+|                             |                |
+| Long                        | True           |
+| ADG realized per exposure   | 0.197%         |
+| Final balance               | 1931.84        |
+| Final equity                | 1930.85        |
+| Net PNL + fees              | 931.838        |
+| Total gain                  | 96.62%         |
+| Average daily gain          | 0.059%         |
+| Net PNL + fees              | 931.838        |
+| Loss to profit ratio        | 0.02922        |
+| Price action distance mean  | 0.0113         |
+| Price action distance std   | 0.0244452      |
+| Price action distance max   | 0.81607        |
+| Closest bankruptcy          | 100.0%         |
+| Lowest equity/balance ratio | 0.8647         |
+| Equity/balance ratio std    | 0.004699       |
+| No. fills                   | 15591          |
+| No. entries                 | 8832           |
+| No. closes                  | 6759           |
+| No. initial entries         | 6248           |
+| No. reentries               | 2480           |
+| No. unstuck/EMA entries     | 104            |
+| No. unstuck/EMA closes      | 136            |
+| No. normal closes           | 6623           |
+| Average n fills per day     | 14.0           |
+| Mean hours stuck            | 1.71812        |
+| Max hours stuck             | 95.4           |
+| PNL sum                     | 966.2          |
+| Profit sum                  | 995.3          |
+| Loss sum                    | -29.09         |
+| Fee sum                     | -34.38         |
+| Volume quote                | 459829.0       |
++-----------------------------+----------------+
