@@ -1,0 +1,44 @@
++----------------------------------------------+
+|                   Summary                    |
++-----------------------------+----------------+
+| Metric                      | Value          |
++-----------------------------+----------------+
+| Exchange                    | bybit          |
+| Market type                 | futures        |
+| Symbol                      | SUSHIUSDT      |
+| Passivbot mode              | recursive_grid |
+| No. days                    | 900.0          |
+| Starting balance            | 1000.0         |
+|                             |                |
+| Long                        | True           |
+| ADG realized per exposure   | 0.421%         |
+| Final balance               | 3126.42        |
+| Final equity                | 3126.42        |
+| Net PNL + fees              | 2126.42        |
+| Total gain                  | 217.4%         |
+| Average daily gain          | 0.126%         |
+| Net PNL + fees              | 2126.42        |
+| Loss to profit ratio        | 0.01688        |
+| Price action distance mean  | 0.0167757      |
+| Price action distance std   | 0.0264161      |
+| Price action distance max   | 1.33744        |
+| Closest bankruptcy          | 100.0%         |
+| Lowest equity/balance ratio | 0.8277         |
+| Equity/balance ratio std    | 0.005117       |
+| No. fills                   | 14707          |
+| No. entries                 | 6907           |
+| No. closes                  | 7800           |
+| No. initial entries         | 5080           |
+| No. reentries               | 1603           |
+| No. unstuck/EMA entries     | 224            |
+| No. unstuck/EMA closes      | 266            |
+| No. normal closes           | 7534           |
+| Average n fills per day     | 16.3           |
+| Mean hours stuck            | 1.47197        |
+| Max hours stuck             | 79.1           |
+| PNL sum                     | 2174.0         |
+| Profit sum                  | 2211.0         |
+| Loss sum                    | -37.33         |
+| Fee sum                     | -47.21         |
+| Volume quote                | 1116890.0      |
++-----------------------------+----------------+
