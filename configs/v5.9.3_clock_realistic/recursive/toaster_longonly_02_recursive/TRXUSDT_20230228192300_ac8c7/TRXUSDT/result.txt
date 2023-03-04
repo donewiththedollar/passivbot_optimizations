@@ -1,0 +1,44 @@
++----------------------------------------------+
+|                   Summary                    |
++-----------------------------+----------------+
+| Metric                      | Value          |
++-----------------------------+----------------+
+| Exchange                    | bybit          |
+| Market type                 | futures        |
+| Symbol                      | TRXUSDT        |
+| Passivbot mode              | recursive_grid |
+| No. days                    | 1100.0         |
+| Starting balance            | 1000.0         |
+|                             |                |
+| Long                        | True           |
+| ADG realized per exposure   | 0.119%         |
+| Final balance               | 1498.08        |
+| Final equity                | 1498.08        |
+| Net PNL + fees              | 498.085        |
+| Total gain                  | 51.37%         |
+| Average daily gain          | 0.0356%        |
+| Net PNL + fees              | 498.085        |
+| Loss to profit ratio        | 0.008565       |
+| Price action distance mean  | 0.00965705     |
+| Price action distance std   | 0.00996359     |
+| Price action distance max   | 0.22168        |
+| Closest bankruptcy          | 100.0%         |
+| Lowest equity/balance ratio | 0.9454         |
+| Equity/balance ratio std    | 0.001049       |
+| No. fills                   | 18314          |
+| No. entries                 | 9757           |
+| No. closes                  | 8557           |
+| No. initial entries         | 8481           |
+| No. reentries               | 1239           |
+| No. unstuck/EMA entries     | 37             |
+| No. unstuck/EMA closes      | 26             |
+| No. normal closes           | 8531           |
+| Average n fills per day     | 16.1           |
+| Mean hours stuck            | 1.48686        |
+| Max hours stuck             | 93.8167        |
+| PNL sum                     | 513.7          |
+| Profit sum                  | 518.1          |
+| Loss sum                    | -4.438         |
+| Fee sum                     | -15.57         |
+| Volume quote                | 125955.0       |
++-----------------------------+----------------+
