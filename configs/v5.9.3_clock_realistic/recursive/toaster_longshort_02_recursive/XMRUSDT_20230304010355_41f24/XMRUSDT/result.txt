@@ -1,0 +1,76 @@
++----------------------------------------------+
+|                   Summary                    |
++-----------------------------+----------------+
+| Metric                      | Value          |
++-----------------------------+----------------+
+| Exchange                    | bybit          |
+| Market type                 | futures        |
+| Symbol                      | XMRUSDT        |
+| Passivbot mode              | recursive_grid |
+| No. days                    | 1100.0         |
+| Starting balance            | 1000.0         |
+|                             |                |
+| Long                        | True           |
+| ADG realized per exposure   | 0.184%         |
+| Final balance               | 1859.08        |
+| Final equity                | 1859.02        |
+| Net PNL + fees              | 859.084        |
+| Total gain                  | 89.59%         |
+| Average daily gain          | 0.0553%        |
+| Net PNL + fees              | 859.084        |
+| Loss to profit ratio        | 0.1733         |
+| Price action distance mean  | 0.0146806      |
+| Price action distance std   | 0.0288182      |
+| Price action distance max   | 0.902316       |
+| Closest bankruptcy          | 100.0%         |
+| Lowest equity/balance ratio | 0.8572         |
+| Equity/balance ratio std    | 0.005882       |
+| No. fills                   | 15837          |
+| No. entries                 | 8301           |
+| No. closes                  | 7536           |
+| No. initial entries         | 5817           |
+| No. reentries               | 2327           |
+| No. unstuck/EMA entries     | 157            |
+| No. unstuck/EMA closes      | 210            |
+| No. normal closes           | 7326           |
+| Average n fills per day     | 14.1           |
+| Mean hours stuck            | 1.69913        |
+| Max hours stuck             | 95.4           |
+| PNL sum                     | 895.9          |
+| Profit sum                  | 1084.0         |
+| Loss sum                    | -187.8         |
+| Fee sum                     | -36.8          |
+| Volume quote                | 693257.0       |
+|                             |                |
+| Short                       | True           |
+| ADG realized per exposure   | 0.311%         |
+| Final balance               | 1417.25        |
+| Final equity                | 1417.25        |
+| Net PNL + fees              | 417.248        |
+| Total gain                  | 43.14%         |
+| Average daily gain          | 0.0311%        |
+| Net PNL + fees              | 417.248        |
+| Loss to profit ratio        | 0.1681         |
+| Price action distance mean  | 0.0158183      |
+| Price action distance std   | 0.0259723      |
+| Price action distance max   | 0.175353       |
+| Closest bankruptcy          | 100.0%         |
+| Lowest equity/balance ratio | 0.9786         |
+| Equity/balance ratio std    | 0.002225       |
+| No. fills                   | 15561          |
+| No. entries                 | 6423           |
+| No. closes                  | 9138           |
+| No. initial entries         | 3547           |
+| No. reentries               | 2511           |
+| No. unstuck/EMA entries     | 365            |
+| No. unstuck/EMA closes      | 480            |
+| No. normal closes           | 8658           |
+| Average n fills per day     | 13.9           |
+| Mean hours stuck            | 1.72776        |
+| Max hours stuck             | 67.8167        |
+| PNL sum                     | 431.4          |
+| Profit sum                  | 518.5          |
+| Loss sum                    | -87.13         |
+| Fee sum                     | -14.11         |
+| Volume quote                | 447751.0       |
++-----------------------------+----------------+
