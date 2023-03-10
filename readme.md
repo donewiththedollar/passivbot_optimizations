@@ -1,6 +1,6 @@
 # Passivbot Configurations
 ## Updates
-  * **2/26/23** - We still have not given up
+  * **3/10/23 - 10 months later still here :)**
   * Currently optimizing with OHLCV
 ### Current configs of interest
 * (**BEST FROM LIVE FEEDBACK**) 
