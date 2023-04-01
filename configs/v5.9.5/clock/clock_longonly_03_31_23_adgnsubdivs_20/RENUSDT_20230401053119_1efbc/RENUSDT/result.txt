@@ -1,0 +1,47 @@
++--------------------------------------------+
+|                  Summary                   |
++--------------------------------+-----------+
+| Metric                         | Value     |
++--------------------------------+-----------+
+| Exchange                       | bybit     |
+| Market type                    | futures   |
+| Symbol                         | RENUSDT   |
+| Passivbot mode                 | clock     |
+| ADG n subdivisions             | 20        |
+| No. days                       | 900.0     |
+| Starting balance               | 1000.0    |
+|                                |           |
+| Long                           | True      |
+| ADG per exposure               | 0.123%    |
+| ADG weighted per exposure      | 0.123%    |
+| Final balance                  | 1390.78   |
+| Final equity                   | 1390.78   |
+| Net PNL + fees                 | 390.785   |
+| Net Total gain                 | 39.08%    |
+| Average daily gain             | 0.0368%   |
+| Average daily gain weighted    | 0.0368%   |
+| Loss to profit ratio           | 0.2661    |
+| Price action distance mean     | 0.0115909 |
+| Price action distance std      | 0.0174771 |
+| Price action distance max      | 0.524993  |
+| Closest bankruptcy             | 100.0%    |
+| Lowest equity/balance ratio    | 0.8967    |
+| Mean of 10 worst eq/bal ratios | 0.9798    |
+| Equity/balance ratio std       | 0.001833  |
+| No. fills                      | 9110      |
+| No. entries                    | 4535      |
+| No. closes                     | 4575      |
+| No. initial entries            | 0         |
+| No. reentries                  | 0         |
+| No. unstuck/EMA entries        | 4535      |
+| No. unstuck/EMA closes         | 3747      |
+| No. normal closes              | 828       |
+| Average n fills per day        | 10.1      |
+| Mean hours stuck               | 2.36032   |
+| Max hours stuck                | 90.4833   |
+| PNL sum                        | 402.5     |
+| Profit sum                     | 548.5     |
+| Loss sum                       | -146.0    |
+| Fee sum                        | -11.76    |
+| Volume quote                   | 169889.0  |
++--------------------------------+-----------+
