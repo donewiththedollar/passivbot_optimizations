@@ -1,0 +1,47 @@
++-------------------------------------------------+
+|                     Summary                     |
++--------------------------------+----------------+
+| Metric                         | Value          |
++--------------------------------+----------------+
+| Exchange                       | bybit          |
+| Market type                    | futures        |
+| Symbol                         | OMGUSDT        |
+| Passivbot mode                 | recursive_grid |
+| ADG n subdivisions             | 20             |
+| No. days                       | 1000.0         |
+| Starting balance               | 1000.0         |
+|                                |                |
+| Long                           | True           |
+| ADG per exposure               | 0.293%         |
+| ADG weighted per exposure      | 0.262%         |
+| Final balance                  | 2431.78        |
+| Final equity                   | 2431.78        |
+| Net PNL + fees                 | 1431.78        |
+| Net Total gain                 | 143.2%         |
+| Average daily gain             | 0.0878%        |
+| Average daily gain weighted    | 0.0785%        |
+| Loss to profit ratio           | 0.2683         |
+| Price action distance mean     | 0.0139627      |
+| Price action distance std      | 0.023249       |
+| Price action distance max      | 0.520365       |
+| Closest bankruptcy             | 100.0%         |
+| Lowest equity/balance ratio    | 0.8971         |
+| Mean of 10 worst eq/bal ratios | 0.9585         |
+| Equity/balance ratio std       | 0.005055       |
+| No. fills                      | 14434          |
+| No. entries                    | 6203           |
+| No. closes                     | 8231           |
+| No. initial entries            | 2806           |
+| No. reentries                  | 1728           |
+| No. unstuck/EMA entries        | 1669           |
+| No. unstuck/EMA closes         | 3014           |
+| No. normal closes              | 5217           |
+| Average n fills per day        | 14.3           |
+| Mean hours stuck               | 1.68162        |
+| Max hours stuck                | 86.1           |
+| PNL sum                        | 1472.0         |
+| Profit sum                     | 2012.0         |
+| Loss sum                       | -540.0         |
+| Fee sum                        | -40.63         |
+| Volume quote                   | 3173060.0      |
++--------------------------------+----------------+
