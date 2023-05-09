@@ -1,0 +1,15 @@
+{
+ "market_type": "futures",
+ "user": "bybit_01",
+ "symbol": "SANDUSDT",
+ "latency_simulation_ms": 1000,
+ "starting_balance": 1000,
+ "start_date": "2016-01-01",
+ "end_date": "2023-05-08",
+ "base_dir": "backtests",
+ "ohlcv": true,
+ "adg_n_subdivisions": 10,
+ "enable_interactive_plot": false,
+ "plot_theme": "light",
+ "plot_candles_interval": "1m"
+}
