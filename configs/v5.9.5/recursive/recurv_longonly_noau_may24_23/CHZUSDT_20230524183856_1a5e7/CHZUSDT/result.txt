@@ -1,0 +1,47 @@
++-------------------------------------------------+
+|                     Summary                     |
++--------------------------------+----------------+
+| Metric                         | Value          |
++--------------------------------+----------------+
+| Exchange                       | bybit          |
+| Market type                    | futures        |
+| Symbol                         | CHZUSDT        |
+| Passivbot mode                 | recursive_grid |
+| ADG n subdivisions             | 10             |
+| No. days                       | 850.0          |
+| Starting balance               | 1000.0         |
+|                                |                |
+| Long                           | True           |
+| ADG per exposure               | 0.315%         |
+| ADG weighted per exposure      | 0.177%         |
+| Final balance                  | 2234.97        |
+| Final equity                   | 2234.82        |
+| Net PNL + fees                 | 1234.97        |
+| Net Total gain                 | 123.5%         |
+| Average daily gain             | 0.0946%        |
+| Average daily gain weighted    | 0.0531%        |
+| Loss to profit ratio           | 0.0            |
+| Price action distance mean     | 0.00998704     |
+| Price action distance std      | 0.0189111      |
+| Price action distance max      | 1.03274        |
+| Closest bankruptcy             | 100.0%         |
+| Lowest equity/balance ratio    | 0.8474         |
+| Mean of 10 worst eq/bal ratios | 0.9252         |
+| Equity/balance ratio std       | 0.002975       |
+| No. fills                      | 8775           |
+| No. entries                    | 4807           |
+| No. closes                     | 3968           |
+| No. initial entries            | 2984           |
+| No. reentries                  | 1823           |
+| No. unstuck/EMA entries        | 0              |
+| No. unstuck/EMA closes         | 0              |
+| No. normal closes              | 3968           |
+| Average n fills per day        | 10.3           |
+| Mean hours stuck               | 2.32028        |
+| Max hours stuck                | 59.9667        |
+| PNL sum                        | 1258.0         |
+| Profit sum                     | 1258.0         |
+| Loss sum                       | 0.0            |
+| Fee sum                        | -23.37         |
+| Volume quote                   | 430064.0       |
++--------------------------------+----------------+
