@@ -1,0 +1,47 @@
++-------------------------------------------------+
+|                     Summary                     |
++--------------------------------+----------------+
+| Metric                         | Value          |
++--------------------------------+----------------+
+| Exchange                       | bybit          |
+| Market type                    | futures        |
+| Symbol                         | KSMUSDT        |
+| Passivbot mode                 | recursive_grid |
+| ADG n subdivisions             | 10             |
+| No. days                       | 930.0          |
+| Starting balance               | 1000.0         |
+|                                |                |
+| Long                           | True           |
+| ADG per exposure               | 0.192%         |
+| ADG weighted per exposure      | 0.123%         |
+| Final balance                  | 1707.76        |
+| Final equity                   | 1707.75        |
+| Net PNL + fees                 | 707.762        |
+| Net Total gain                 | 70.78%         |
+| Average daily gain             | 0.0576%        |
+| Average daily gain weighted    | 0.0368%        |
+| Loss to profit ratio           | 0.1246         |
+| Price action distance mean     | 0.00990775     |
+| Price action distance std      | 0.0122809      |
+| Price action distance max      | 0.406485       |
+| Closest bankruptcy             | 100.0%         |
+| Lowest equity/balance ratio    | 0.9126         |
+| Mean of 10 worst eq/bal ratios | 0.9556         |
+| Equity/balance ratio std       | 0.002082       |
+| No. fills                      | 16303          |
+| No. entries                    | 8959           |
+| No. closes                     | 7344           |
+| No. initial entries            | 6302           |
+| No. reentries                  | 2046           |
+| No. unstuck/EMA entries        | 611            |
+| No. unstuck/EMA closes         | 624            |
+| No. normal closes              | 6720           |
+| Average n fills per day        | 17.6           |
+| Mean hours stuck               | 1.36557        |
+| Max hours stuck                | 73.5           |
+| PNL sum                        | 733.0          |
+| Profit sum                     | 837.3          |
+| Loss sum                       | -104.3         |
+| Fee sum                        | -25.25         |
+| Volume quote                   | 745191.0       |
++--------------------------------+----------------+
