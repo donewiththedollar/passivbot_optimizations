@@ -1,0 +1,48 @@
++-------------------------------------------------+
+|                     Summary                     |
++--------------------------------+----------------+
+| Metric                         | Value          |
++--------------------------------+----------------+
+| Exchange                       | bybit          |
+| Market type                    | futures        |
+| Symbol                         | HBARUSDT       |
+| Passivbot mode                 | recursive_grid |
+| ADG n subdivisions             | 10             |
+| No. days                       | 580.0          |
+| Starting balance               | 1000.0         |
+|                                |                |
+| Long                           | True           |
+| ADG per exposure               | 0.205%         |
+| ADG weighted per exposure      | 0.15%          |
+| Final balance                  | 3272.79        |
+| Final equity                   | 3272.73        |
+| Net PNL + fees                 | 2272.79        |
+| Net Total gain                 | 227.3%         |
+| Average daily gain             | 0.205%         |
+| Average daily gain weighted    | 0.15%          |
+| Loss to profit ratio           | 0.0656         |
+| Exposure ratios mean           | 0.087321       |
+| Price action distance mean     | 0.00954912     |
+| Price action distance std      | 0.0173346      |
+| Price action distance max      | 0.247334       |
+| Closest bankruptcy             | 99.85%         |
+| Lowest equity/balance ratio    | 0.8015         |
+| Mean of 10 worst eq/bal ratios | 0.8193         |
+| Equity/balance ratio std       | 0.01544        |
+| No. fills                      | 32846          |
+| No. entries                    | 8782           |
+| No. closes                     | 24064          |
+| No. initial entries            | 5235           |
+| No. reentries                  | 1831           |
+| No. unstuck/EMA entries        | 1716           |
+| No. unstuck/EMA closes         | 2728           |
+| No. normal closes              | 21336          |
+| Average n fills per day        | 56.9           |
+| Mean hours stuck               | 0.421416       |
+| Max hours stuck                | 58.0833        |
+| PNL sum                        | 2325.0         |
+| Profit sum                     | 2489.0         |
+| Loss sum                       | -163.2         |
+| Fee sum                        | -52.5          |
+| Volume quote                   | 9585350.0      |
++--------------------------------+----------------+
