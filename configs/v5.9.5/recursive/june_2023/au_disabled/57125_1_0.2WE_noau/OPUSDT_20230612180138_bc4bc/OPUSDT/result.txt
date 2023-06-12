@@ -1,0 +1,48 @@
++-------------------------------------------------+
+|                     Summary                     |
++--------------------------------+----------------+
+| Metric                         | Value          |
++--------------------------------+----------------+
+| Exchange                       | bybit          |
+| Market type                    | futures        |
+| Symbol                         | OPUSDT         |
+| Passivbot mode                 | recursive_grid |
+| ADG n subdivisions             | 10             |
+| No. days                       | 360.0          |
+| Starting balance               | 1000.0         |
+|                                |                |
+| Long                           | True           |
+| ADG per exposure               | 0.421%         |
+| ADG weighted per exposure      | 0.267%         |
+| Final balance                  | 1352.2         |
+| Final equity                   | 1352.2         |
+| Net PNL + fees                 | 352.2          |
+| Net Total gain                 | 35.22%         |
+| Average daily gain             | 0.0842%        |
+| Average daily gain weighted    | 0.0534%        |
+| Loss to profit ratio           | 0.0            |
+| Exposure ratios mean           | 0.17596        |
+| Price action distance mean     | 0.0345043      |
+| Price action distance std      | 0.0856875      |
+| Price action distance max      | 0.560276       |
+| Closest bankruptcy             | 100.0%         |
+| Lowest equity/balance ratio    | 0.9281         |
+| Mean of 10 worst eq/bal ratios | 0.9302         |
+| Equity/balance ratio std       | 0.01217        |
+| No. fills                      | 30481          |
+| No. entries                    | 7760           |
+| No. closes                     | 22721          |
+| No. initial entries            | 5594           |
+| No. reentries                  | 2166           |
+| No. unstuck/EMA entries        | 0              |
+| No. unstuck/EMA closes         | 0              |
+| No. normal closes              | 22721          |
+| Average n fills per day        | 85.0           |
+| Mean hours stuck               | 0.282001       |
+| Max hours stuck                | 885.317        |
+| PNL sum                        | 359.4          |
+| Profit sum                     | 359.4          |
+| Loss sum                       | 0.0            |
+| Fee sum                        | -7.197         |
+| Volume quote                   | 191516.0       |
++--------------------------------+----------------+
