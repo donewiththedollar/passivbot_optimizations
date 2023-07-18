@@ -1,0 +1,48 @@
++---------------------------------------------+
+|                   Summary                   |
++--------------------------------+------------+
+| Metric                         | Value      |
++--------------------------------+------------+
+| Exchange                       | bybit      |
+| Market type                    | futures    |
+| Symbol                         | APEUSDT    |
+| Passivbot mode                 | neat_grid  |
+| ADG n subdivisions             | 10         |
+| No. days                       | 470.0      |
+| Starting balance               | 1000.0     |
+|                                |            |
+| Long                           | True       |
+| ADG per exposure               | 0.225%     |
+| ADG weighted per exposure      | 0.134%     |
+| Final balance                  | 1237.66    |
+| Final equity                   | 1237.66    |
+| Net PNL + fees                 | 237.663    |
+| Net Total gain                 | 23.77%     |
+| Average daily gain             | 0.045%     |
+| Average daily gain weighted    | 0.0268%    |
+| Loss to profit ratio           | 0.02711    |
+| Exposure ratios mean           | 0.051983   |
+| Price action distance mean     | 0.00804288 |
+| Price action distance std      | 0.0107674  |
+| Price action distance max      | 0.244158   |
+| Closest bankruptcy             | 100.0%     |
+| Lowest equity/balance ratio    | 0.9607     |
+| Mean of 10 worst eq/bal ratios | 0.9733     |
+| Equity/balance ratio std       | 0.001402   |
+| No. fills                      | 15400      |
+| No. entries                    | 8554       |
+| No. closes                     | 6846       |
+| No. initial entries            | 6740       |
+| No. reentries                  | 1800       |
+| No. unstuck/EMA entries        | 14         |
+| No. unstuck/EMA closes         | 97         |
+| No. normal closes              | 6749       |
+| Average n fills per day        | 32.5       |
+| Mean hours stuck               | 0.737482   |
+| Max hours stuck                | 68.0667    |
+| PNL sum                        | 249.0      |
+| Profit sum                     | 255.9      |
+| Loss sum                       | -6.938     |
+| Fee sum                        | -11.31     |
+| Volume quote                   | 97973.8    |
++--------------------------------+------------+
