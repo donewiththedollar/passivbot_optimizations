@@ -1,0 +1,48 @@
++--------------------------------------------+
+|                  Summary                   |
++--------------------------------+-----------+
+| Metric                         | Value     |
++--------------------------------+-----------+
+| Exchange                       | bybit     |
+| Market type                    | futures   |
+| Symbol                         | XTZUSDT   |
+| Passivbot mode                 | neat_grid |
+| ADG n subdivisions             | 10        |
+| No. days                       | 990.0     |
+| Starting balance               | 1000.0    |
+|                                |           |
+| Long                           | True      |
+| ADG per exposure               | 0.122%    |
+| ADG weighted per exposure      | 0.0566%   |
+| Final balance                  | 1273.23   |
+| Final equity                   | 1273.15   |
+| Net PNL + fees                 | 273.231   |
+| Net Total gain                 | 27.32%    |
+| Average daily gain             | 0.0245%   |
+| Average daily gain weighted    | 0.0113%   |
+| Loss to profit ratio           | 0.02186   |
+| Exposure ratios mean           | 0.067279  |
+| Price action distance mean     | 0.0115814 |
+| Price action distance std      | 0.0141138 |
+| Price action distance max      | 0.276017  |
+| Closest bankruptcy             | 100.0%    |
+| Lowest equity/balance ratio    | 0.9568    |
+| Mean of 10 worst eq/bal ratios | 0.9683    |
+| Equity/balance ratio std       | 0.001597  |
+| No. fills                      | 33016     |
+| No. entries                    | 23933     |
+| No. closes                     | 9083      |
+| No. initial entries            | 8589      |
+| No. reentries                  | 15322     |
+| No. unstuck/EMA entries        | 22        |
+| No. unstuck/EMA closes         | 462       |
+| No. normal closes              | 8621      |
+| Average n fills per day        | 33.5      |
+| Mean hours stuck               | 0.715961  |
+| Max hours stuck                | 91.4833   |
+| PNL sum                        | 286.3     |
+| Profit sum                     | 292.7     |
+| Loss sum                       | -6.399    |
+| Fee sum                        | -13.08    |
+| Volume quote                   | 292844.0  |
++--------------------------------+-----------+
