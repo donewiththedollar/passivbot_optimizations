@@ -1,0 +1,48 @@
++-------------------------------------------------+
+|                     Summary                     |
++--------------------------------+----------------+
+| Metric                         | Value          |
++--------------------------------+----------------+
+| Exchange                       | bybit          |
+| Market type                    | futures        |
+| Symbol                         | COTIUSDT       |
+| Passivbot mode                 | recursive_grid |
+| ADG n subdivisions             | 10             |
+| No. days                       | 600.0          |
+| Starting balance               | 1000.0         |
+|                                |                |
+| Long                           | True           |
+| ADG per exposure               | 0.134%         |
+| ADG weighted per exposure      | 0.113%         |
+| Final balance                  | 1173.08        |
+| Final equity                   | 1173.08        |
+| Net PNL + fees                 | 173.078        |
+| Net Total gain                 | 17.31%         |
+| Average daily gain             | 0.0267%        |
+| Average daily gain weighted    | 0.0226%        |
+| Loss to profit ratio           | 0.0            |
+| Exposure ratios mean           | 0.032743       |
+| Price action distance mean     | 0.0101467      |
+| Price action distance std      | 0.00906954     |
+| Price action distance max      | 0.174529       |
+| Closest bankruptcy             | 100.0%         |
+| Lowest equity/balance ratio    | 0.9702         |
+| Mean of 10 worst eq/bal ratios | 0.9783         |
+| Equity/balance ratio std       | 0.001113       |
+| No. fills                      | 14024          |
+| No. entries                    | 4292           |
+| No. closes                     | 9732           |
+| No. initial entries            | 2735           |
+| No. reentries                  | 1557           |
+| No. unstuck/EMA entries        | 0              |
+| No. unstuck/EMA closes         | 0              |
+| No. normal closes              | 9732           |
+| Average n fills per day        | 23.5           |
+| Mean hours stuck               | 1.02216        |
+| Max hours stuck                | 79.5833        |
+| PNL sum                        | 175.2          |
+| Profit sum                     | 175.2          |
+| Loss sum                       | 0.0            |
+| Fee sum                        | -2.135         |
+| Volume quote                   | 77750.0        |
++--------------------------------+----------------+
