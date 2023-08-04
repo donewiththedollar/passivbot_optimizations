@@ -1,14 +1,14 @@
 # Passivbot Configurations
 ## Updates
-  * **7/1/2023 still actively optimizing**
+  * **8/4/2023** I quit my job 10 days short of a year ago to persue optimizing for this project and found myself heavily into algorithmic trading and quantitative analytics. I never stopped, and refuse to. Enjoy and assess risk accordingly. I am not leaving.
   * Currently optimizing with OHLCV
-### Current configs of interest
-* (**BEST FROM LIVE FEEDBACK**) 
+### Current configs of interest (outdated)
+* (**BEST FROM LIVE FEEDBACK**) (outdated)
 * https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/harmony/recursive/longshort/harmony_recurv_auenabled_longshort_0.25_0.12WE_bwtp_off
 * https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/harmony/recursive/longonly/harmony_recurv_noau_longonly_1.0WE_bwtpoff
 
 * https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.3_clock_realistic/toaster_longonly_01_safe
-##### Particle swarm (**UPDATED 12/04/22**)
+##### Particle swarm (**UPDATED 12/04/22**) (outdated)
   * Recursive: https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/particle_swarm/recursive
   * Neat: https://github.com/donewiththedollar/passivbot_optimizations/tree/main/configs/v5.9.0/particle_swarm/neat
   
